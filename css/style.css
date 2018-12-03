@@ -17,44 +17,65 @@ a:active{
 }
 .container {
   background-color: #333d47;
-  width: 100%;
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  height: 70px;
 }
 .copyright-text {
  color: white;
 }
 .padding-mid {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .margin-clear {
   margin: 0px;
 }
 .logo-white-small {
-  float: left;
   padding: 20px 10px 20px 10px;
-  width: 65px;
-  height: auto;
+  width: 100px;
+  height: 100px;
 }
 .order {
-  float: right;
-  }
+  align-self: flex-end;
+}
 li {
   display: inline;
 }
 .hidden {
     display: none;
-  }
-  .container-big{
+}
+.container-big{
     padding-left: 30px;
-    padding-right:75px;
+    padding-right:20px;
+    width: 87%;
     display: flex;
     align-self: center;
-  }
+    flex-direction: column;
+}
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+.logo-text {
+  display: inline-flex;
+  height: auto;
+  width: 100%;
+}
 /*------------------------media------------------------------*/
 @media (min-width: 768px) {
+  .logo-text {
+    height: auto;
+    width: 50%;
+  }
   .container-big{
+    padding-top: 0px;
     flex-direction: row;
-    padding: 0;
-    width: 100%;
+  }
+  .order {
+    align-self: flex-start;
   }
   footer {
     justify-content: center;
@@ -62,26 +83,34 @@ li {
   }
   .container {
     background-color: #333d47;
-    width: 45%;
+    width: 35%;
   }
   .top-line {
     padding-top:10px;
   }
   .padding-mid {
-    padding-top: 35px;
+    padding-top: 50px;
+    width: 240px;
   }
   .logo-white-small {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0;
     width: 100px;
-    height: auto;
+    height: 100px;
+    }
+    ul {
+        margin-top: 16px;
+        margin-right: 0;
     }
 }
 @media (min-width: 1152px) {
+  .logo-text {
+    width: 60%
+  }
   .container {
     background-color: #333d47;
-    width: 38%;
+    width: 100%;
   }
   .container-big{
     padding-left: 234px;
@@ -93,10 +122,11 @@ li {
     padding-top:20px;
   }
   .inline{
-    padding-top: 60px;
+    padding-top: 50px;
   }
   .padding-mid {
     padding-top: 0;
+    width: auto;
   }
   .logo-white-small {
     width: auto;
@@ -106,7 +136,6 @@ li {
     display: block;
   }
 }
-
 /*----------clearfix----------------------------------------*/
  .clearfix::after {
      content: "";
