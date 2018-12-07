@@ -1,24 +1,22 @@
-/************************       Universal        ***************************/
+/* ----- global styles ----- */
 * {
   box-sizing: border-box;
 }
 
-#header{
+body {
+  margin: 0;
+}
+
+/* ----- header styles ----- */
+
+header{
   background-color: #333d47;
 }
 
-/***********************        MOBILE         ****************************/
-/****************   Desk only features  **************/
 #desk-header{
   display: none;
 }
 
-
-
-/********************   HEADER   ********************/
-
-
-/********     Header Main    **********/
 #mob-header{
   display: flex;
   justify-content: space-between;
@@ -51,25 +49,17 @@
   background-color: #ff5000;
 }
 
-/************************       TABLET        ***************************/
-
-@media (min-width: 720px){ /*Temp breakpoint: will adjust min-wid to accomomodate rest of content */
-
+@media (min-width: 720px){
   #mob-header{
     padding: 10px 35px;
   }
 }
 
-/************************       DESKTOP I      ***************************/
-
-@media (min-width: 1080px){ /*Temp breakpoint: will adjust min-wid to accomomodate rest of content */
-  /*********   Desk only features  ********/
+@media (min-width: 1080px){
   #mob-header{
     display: none;
   }
 
-
-/******************** HEADER ***************************/
   #desk-header{
     display: flex;
     justify-content: center;
@@ -81,6 +71,7 @@
   #desk-logo{
     width: 300px;
   }
+
   #desk-nav{
     display: flex;
     justify-content: space-between;
@@ -97,27 +88,20 @@
   }
 }
 
-/************************       DESKTOP II      ***************************/
 @media (min-width: 1300px){
-
-/******************** HEADER ***************************/
   #desk-nav{
     margin-left: 160px;
   }
 }
 
-/************************       DESKTOP III     ***************************/
 @media (min-width: 1700px){
-
-/******************** HEADER ***************************/
   #desk-nav{
     margin-left: 220px;
   }
 }
 
-body {
-  margin: 0;
-}
+/* ----- footer styles ----- */
+
 footer {
   height: auto;
   background-color: #333d47;
@@ -125,6 +109,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 a:link,
 a:visited,
 a:hover,
@@ -132,23 +117,27 @@ a:active{
     text-decoration: none;
     color: white;
 }
+
 .container-outter {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .container-inner {
   display: flex;
   flex-direction: column;
-  height: 132px;
+  min-height: 132px;
   width: 100%
 }
+
 .copyright-text {
  color: white;
  margin:0;
  align-self: flex-start;
  padding-top: 58px;
 }
+
 .order {
   margin: 0;
   align-self: flex-end;
@@ -156,23 +145,26 @@ a:active{
   padding-top: 10px;
   padding-left: 0px;
 }
-li {
+
+footer li {
   display: inline;
 }
- ul {
+
+ footer ul {
    align-self: flex-end;
  }
+
 .logo-white-small {
   padding: 20px 10px 30px 10px;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 150px;
 }
-/*------------------------media------------------------------*/
+
 @media (min-width: 768px) {
   .order{
     position: relative;
     top: -75px;
-    right:20px;
+    right: 20px;
   }
   .copyright-text {
     width: 220px;
@@ -185,6 +177,7 @@ li {
     align-items: center;
   }
 }
+
 @media (min-width: 1152px) {
   .container-outter {
     width: 75%
@@ -197,9 +190,3 @@ li {
     right: 35px;
   }
 }
-/*----------clearfix----------------------------------------*/
- .clearfix::after {
-     content: "";
-     clear: both;
-     display: table;
- }
