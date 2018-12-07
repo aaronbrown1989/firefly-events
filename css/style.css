@@ -1,3 +1,120 @@
+/************************       Universal        ***************************/
+* {
+  box-sizing: border-box;
+}
+
+#header{
+  background-color: #333d47;
+}
+
+/***********************        MOBILE         ****************************/
+/****************   Desk only features  **************/
+#desk-header{
+  display: none;
+}
+
+
+
+/********************   HEADER   ********************/
+
+
+/********     Header Main    **********/
+#mob-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  border: solid black 1px;
+  padding: 10px 25px;
+
+}
+
+#mob-logo{
+  width: 65px;
+  height: 65px;
+}
+
+#burger {
+  height: 56px;
+  width: 56px;
+  padding: 6px 8px;
+  margin-right: -5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+#burger div{
+  height: 4px;
+  background-color: #ff5000;
+}
+
+/************************       TABLET        ***************************/
+
+@media (min-width: 720px){ /*Temp breakpoint: will adjust min-wid to accomomodate rest of content */
+
+  #mob-header{
+    padding: 10px 35px;
+  }
+}
+
+/************************       DESKTOP I      ***************************/
+
+@media (min-width: 1080px){ /*Temp breakpoint: will adjust min-wid to accomomodate rest of content */
+  /*********   Desk only features  ********/
+  #mob-header{
+    display: none;
+  }
+
+
+/******************** HEADER ***************************/
+  #desk-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 0px 5%;
+  }
+
+  #desk-logo{
+    width: 300px;
+  }
+  #desk-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+  }
+
+  #desk-nav>li{
+    list-style: none;
+    color: white;
+    font-family: arial;
+    letter-spacing: 0.2px;
+    font-size: 17px;
+    margin-right: 40px;
+  }
+}
+
+/************************       DESKTOP II      ***************************/
+@media (min-width: 1300px){
+
+/******************** HEADER ***************************/
+  #desk-nav{
+    margin-left: 160px;
+  }
+}
+
+/************************       DESKTOP III     ***************************/
+@media (min-width: 1700px){
+
+/******************** HEADER ***************************/
+  #desk-nav{
+    margin-left: 220px;
+  }
+}
+
 body {
   margin: 0;
 }
