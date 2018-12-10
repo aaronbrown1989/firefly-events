@@ -102,6 +102,95 @@ header{
   }
 }
 
+/* ----- main styles ----- */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+/* ----- about styles ----- */
+#about {
+  order: 1;
+}
+
+@media (min-width: 1200px) {
+  #about {
+    order: 1;
+    flex: 1.5 50%;
+  }
+}
+
+/* ----- services styles ----- */
+#services {
+  order: 2;
+}
+
+@media (min-width: 1200px) {
+  #services {
+    order: 3;
+    flex: 3 100%;
+  }
+}
+
+/* ----- latest-news styles ----- */
+#latest-news {
+  order: 3;
+}
+
+@media (min-width: 1200px) {
+  #latest-news {
+    order: 4;
+    flex: 3 100%;
+  }
+}
+
+/* ----- testimonials styles ----- */
+#testimonials {
+  order: 4;
+}
+
+@media (min-width: 1200px) {
+  #testimonials {
+    order: 2;
+    flex: 1.5 50%;
+  }
+}
+
+/* ----- partners styles ----- */
+#partners {
+  order: 5;
+}
+
+@media (min-width: 1200px) {
+  #partners {
+    order: 5;
+    flex: 1 33.3%;
+  }
+}
+
+/* ----- social-media styles ----- */
+#social-media {
+  order: 6;
+}
+
+@media (min-width: 1200px) {
+  #social-media {
+    order: 6;
+    flex: 2 66.6%;
+  }
+}
+
+
 /* ----- footer styles ----- */
 
 footer {
