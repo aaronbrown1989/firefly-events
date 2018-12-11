@@ -102,6 +102,27 @@ header{
   }
 }
 
+/* ----- image carousel styles ----- */
+
+#image-carousel div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.slide-one {
+  background-image: url("../img/carousel/carousel-one.jpg");
+}
+
+.slide-two {
+  background-image: url("../img/carousel/carousel-two.jpg");
+}
+
+.slide-three {
+  background-image: url("../img/carousel/carousel-three.jpg");
+}
+
 /* ----- main styles ----- */
 
 main {
