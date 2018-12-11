@@ -211,6 +211,33 @@ h2.carousel-header {
   opacity: 1;
 }
 
+@media (min-width: 600px) {
+  #image-carousel div {
+    height: 250px;
+  }
+
+  .slide-one,
+  .slide-two,
+  .slide-three {
+    margin: 0 -15px;
+    -webkit-clip-path: polygon(50px 0%, 100% 0%, calc(100% - 50px) 100%, 0% 100%);
+    clip-path: polygon(50px 0%, 100% 0%, calc(100% - 50px) 100%, 0% 100%);
+  }
+
+  .carousel-flag {
+    position: absolute;
+    top: 35px;
+    left: 55px;
+  }
+
+  h2.carousel-header {
+    position: absolute;
+    left: 55px;
+    bottom: 15px;
+  }
+}
+
+
 /* ----- main styles ----- */
 
 main {
