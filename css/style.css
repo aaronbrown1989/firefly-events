@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+p {
+  line-height: 1.4;
+}
+
 /* ----- header styles ----- */
 
 header{
@@ -117,17 +121,17 @@ header{
 }
 
 .slide-one {
-  background-image: linear-gradient(transparent, rgba(51, 61, 71, 0.5)),
+  background-image: linear-gradient(transparent, rgba(51, 61, 71, 0.6)),
                     url("../img/carousel/carousel-one.jpg");
 }
 
 .slide-two {
-  background-image: linear-gradient(transparent, rgba(51, 61, 71, 0.5)),
+  background-image: linear-gradient(transparent, rgba(51, 61, 71, 0.6)),
                     url("../img/carousel/carousel-two.jpg");
 }
 
 .slide-three {
-  background-image: linear-gradient(transparent, rgba(51, 61, 71, 0.5)),
+  background-image: linear-gradient(transparent, rgba(51, 61, 71, 0.6)),
                     url("../img/carousel/carousel-three.jpg");
 }
 
@@ -152,6 +156,10 @@ header{
 
 .event-flag {
   background: #ff1500;
+}
+
+p.carousel-text {
+  display: none;
 }
 
 h2.carousel-header {
@@ -216,6 +224,14 @@ h2.carousel-header {
     height: 250px;
   }
 
+  .slick-slide {
+    opacity: 0.8;
+  }
+
+  .slick-active {
+    opacity: 1;
+  }
+
   .slide-one,
   .slide-two,
   .slide-three {
@@ -237,6 +253,100 @@ h2.carousel-header {
   }
 }
 
+@media (min-width: 900px) {
+  #image-carousel div {
+    height: 350px;
+  }
+
+  .slide-one,
+  .slide-two,
+  .slide-three {
+    margin: 0 -25px;
+    -webkit-clip-path: polygon(70px 0%, 100% 0%, calc(100% - 70px) 100%, 0% 100%);
+    clip-path: polygon(70px 0%, 100% 0%, calc(100% - 70px) 100%, 0% 100%);
+  }
+
+  .slick-prev,
+  .slick-next {
+      font-size: 40px;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 45px;
+      height: 45px;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      background: transparent;
+      border: 0;
+      color: #fff;
+      outline: none;
+      opacity: 0.75;
+      z-index: 1;
+  }
+
+  .slick-prev:hover,
+  .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    opacity: 1;
+  }
+
+  .slick-prev {
+    left: 125px;
+  }
+
+  .slick-next {
+    right: 125px;
+  }
+
+  .carousel-flag {
+    position: absolute;
+    top: 35px;
+    left: 75px;
+  }
+
+  p.carousel-text {
+    color: #fff;
+    display: block;
+    position: absolute;
+    left: 55px;
+    bottom: 45px;
+    width: 70%;
+  }
+
+  h2.carousel-header {
+    position: absolute;
+    left: 55px;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slick-prev {
+    left: 225px;
+  }
+
+  .slick-next {
+    right: 225px;
+  }
+}
+
+@media (min-width: 1600px) {
+  p.carousel-text {
+    width: 60%;
+  }
+
+  .slick-prev {
+    left: 425px;
+  }
+
+  .slick-next {
+    right: 425px;
+  }
+}
 
 /* ----- main styles ----- */
 
