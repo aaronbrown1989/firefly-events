@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i" rel="stylesheet">
-    <title></title>
-  </head>
-  <body>
-
-    <header>
-      <div id="mob-header">
-        <img id="mob-logo" src="./img/logo/logo-dark-small.png"/>
-        <div id="burger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-      <div id="desk-header">
-        <img id="desk-logo" src="./img/logo/logo-light.png" />
-        <ul id="desk-nav">
-          <li>Home</li>
-          <li>What's on</li>
-          <li>About us</li>
-          <li>Our Events</li>
-          <li>Contact Us</li>
-        </ul>
-      </div>
-    </header>
+<?php include 'header.php';?>
 
     <section id="image-carousel">
       <div class="slide-one">
@@ -102,57 +70,4 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container-outer">
-        <img class="logo-white-small" src="img/logo/logo-light-small.png" alt="This is the FireFly logo">
-        <div class="container-inner">
-          <p class="copyright-text">	&copy; Copyright Firefly Events 2018. All rights reserved</p>
-          <ul class="order">
-            <li>
-              <a href="#">
-                Home
-              </a>
-            </li>
-            <li>
-              |
-            </li>
-            <li>
-              <a href="#">
-                What's on
-              </a>
-            </li>
-            <li>
-              |
-            </li>
-            <li>
-              <a href="#">
-                About us
-              </a>
-            </li>
-            <li>
-              |
-            </li>
-            <li>
-              <a href="#">
-                Our Events
-              </a>
-            </li>
-            <li>
-              |
-            </li>
-            <li>
-              <a href="#">
-                Contact us
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="https://unpkg.com/ionicons@4.4.8/dist/ionicons.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
-</html>
+<?php include 'footer.php';?>
