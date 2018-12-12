@@ -53,3 +53,19 @@ $(document).ready(function(){
     ]
   });
 });
+
+// facebook embedded widget
+
+$(window).on('resize', function() {
+  resizeFbPlugin();
+});
+
+$(window).on('load', function() {
+  resizeFbPlugin();
+});
+
+function resizeFbPlugin() {
+  const containerWidth = $(".embedded-media").width()
+  const iframeSrc = 'https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fnetmatters&tabs=timeline&width=' + containerWidth +'&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId'
+  $('#embedded-facebook').attr('src', iframeSrc);
+}
