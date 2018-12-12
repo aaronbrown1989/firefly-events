@@ -1,4 +1,5 @@
 /* ----- global styles ----- */
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +13,15 @@ body {
 
 p {
   line-height: 1.4;
+}
+
+.button{
+  background-color: #ff5400;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
 }
 
 /* ----- header styles ----- */
@@ -366,120 +376,94 @@ main {
 
 /* ----- about styles ----- */
 #about{
+  order: 1;
   color:white;
   display: flex;
-  width:100%;
-  height:300px;
   font-family: 'Raleway', sans-serif;
-  letter-spacing: 1px;
   background-color: #333d47;
-  overflow: hidden;
+  padding: 20px;
 }
-#about p, .about-button{
-  margin-left: 1.5em;
-  margin-right:.5em;
+
+#about p {
+  margin: 0 0 20px;
 }
-#about p{
-  margin-top: 5px;
-  margin-bottom: 5px;
+
+#about .button {
+  margin: 10px 0 0;
 }
+
 .about-heading{
-  font-size: 40px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-size: 24px;
+  margin: 0 0 20px;
+  font-weight: 400;
 }
-.about-button{
-  background-color: #ff5400;
-  border-radius: 2px;
-  border: none;
-  color: white;
-  font-size: 16px;
-  padding: .3em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 20px;
-}
-#about .about-button{
-  margin-left:60px;
-}
+
 .about-background-image{
   background-image: url("https://raw.githubusercontent.com/hoytcodes/firefly-events/master/img/logo/logo-transparent.png");
   background-repeat: no-repeat;
-  background-position: -20px 110px;
+  background-position: -20px 120%;
   background-size: 220px 220px;
 }
-p{
-  font-size: 16px;
-}
-.about-hidden{
+
+.about-pictures{
   display: none;
 }
 
 /* about media queries --------------- */
 @media only screen and (min-width: 600px){
+
   #about{
-    width:90%;
     border-radius: 10px;
-    margin: 4%;
+    margin: 25px;
+    justify-content: space-between;
   }
+
   .about-content{
     width: 70%;
-    position: inherit;
+    display: flex;
+    flex-direction: column;
   }
-  .about-heading{
-    margin-bottom: 5px;
-    margin-left:1.5em;
+
+  #about .button {
+    margin-top: auto;
+    margin-right: auto;
   }
-  .about-para{
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  #about p{
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .about-button{
-    border-radius: 5px;
-  }
-  .about-hidden{
+
+  .about-pictures{
     display:flex;
-    float: right;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 40%;
+    width: 30%;
+    align-items: center;
   }
+
   .about-pp{
     border-radius: 10px;
     width: 100px;
-    height:80px;
+    height: 100px;
     margin: 10px;
-  }
-  .about-pp-last{
-    margin-left: 10px;
   }
 }
 
-@media only screen and (min-width: 750px){
-  .about-content{
-    width:60%;
+@media only screen and (min-width: 750px) {
+
+  .about-content {
+    width: 60%;
+    margin-right: 20px;
   }
-  .about-para{
-    width:80%;
-  }
-  .about-hidden{
+
+  .about-pictures{
     flex-direction: row;
-    width: 50%;
-    position: absolute;
-    right:-3%;
-    top:390px;
+    justify-content: center;
+    width: 40%;
   }
+
   .about-pp{
-    width: 135px;
-    height:115px;
+    width: 45%;
+    height: auto;
+    margin: 2.5%;
   }
-  .about-pp-last{
-    margin-left: 85px;
-  }
+
   .about-button{
     margin-top: 2em;
     margin-left:60px;
@@ -487,84 +471,46 @@ p{
   }
 }
 
-@media only screen and (min-width: 900px){
-  .about-hidden{
-    top:500px;
-    width: 45%;
+@media only screen and (min-width: 900px) {
+  .about-content {
+    width: 50%;
+  }
+
+  .about-pictures {
+    width: 50%;
+    flex-wrap: nowrap;
+  }
+
+  .about-pp {
+    width: 29%;
+    margin: 0 1%;
   }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
     #about{
-      width:50%;
-      height: 320px;
+      order: 1;
+      flex-basis: 50%;
     }
-    .about-content{
-      margin-left:1em;
-      font-size: 12px;
-      width: 450px;
+
+    .about-content {
+      width: auto;
     }
-    #about p{
-      margin-top: 20px;
-    }
-    .about-heading{
-      font-size: 30px;
-      margin-bottom: 5px;
-    }
-    .about-para{
-      margin-top:5px;
-    }
-    .about-button{
-      margin-top: 20px;
-      margin-left: 45px;
-      border-radius: 5px;
-      margin-top:2em;
-    }
-    .about-hidden{
+
+    .about-pictures{
       flex-direction: column;
-      position: absolute;
-      right:80px;
-      top:520px;
-      width: 50%;
+      width: auto;
     }
+
     .about-pp{
       width: 100px;
-      height:80px;
-      margin: 5px;
+      height: 100px;
+      margin: 10px;
     }
+
     .about-background-image{
-      background-position: -20px 90px;
       background-size: 250px 250px;
     }
-}
-
-@media only screen and (min-width: 1300px){
-  #about{
-    width:450px;
-    height: 340px;
-  }
-  .about-content{
-    float:left;
-    width: 70%;
-  }
-  #about p{
-    margin-top: 5px;
-  }
-  .about-button{
-    border-radius: 5px;
-    margin-top: 0;
-  }
-  .about-pp{
-    position: relative;
-    right:200px;
-  }
-  .about-pp-last{
-    margin-left: 5px;
-  }
-  .about-background-image{
-    top:100px;
-    left:-35px;
-  }
 }
 
 /* ----- services styles ----- */
@@ -599,7 +545,7 @@ p{
 @media (min-width: 1200px) {
   #testimonials {
     order: 2;
-    flex: 1.5 50%;
+    flex-basis: 50%;
   }
 }
 
