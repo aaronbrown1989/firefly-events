@@ -65,7 +65,8 @@ $(window).on('load', function() {
 });
 
 function resizeFbPlugin() {
-  const containerWidth = $(".embedded-media").width()
-  const iframeSrc = 'https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fnetmatters&tabs=timeline&width=' + containerWidth +'&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId'
-  $('#facebook-feed').attr('src', iframeSrc);
+  const containerWidth = Number($(".embedded-media").width()).toFixed(0);
+  const containerHeight = Number($(".embedded-media").height()).toFixed(0);
+  const iframeSrc = 'https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fnetmatters&tabs=timeline&width=' + containerWidth +'&height=' + containerHeight + '&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId'
+  $('#facebook-feed').attr('src', iframeSrc).attr('width', containerWidth).attr('height', containerHeight);
 }
