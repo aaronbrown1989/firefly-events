@@ -466,16 +466,30 @@ main {
 /* ----- social-media styles ----- */
 #social-media {
   order: 6;
+  margin: 0 35px;
 }
 
 .embedded-media {
-  margin: 25px 35px;
+  margin: 25px auto;
   border-radius: 5px;
   -moz-box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
   -webkit-box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
   box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
   overflow: hidden;
   max-width: 500px;
+}
+
+@media (min-width: 600px) {
+  #social-media {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 75px;
+  }
+
+  .embedded-media {
+    width: 50%;
+    margin: 25px 20px;
+  }
 }
 
 @media (min-width: 1200px) {
