@@ -32,6 +32,12 @@ p {
   padding: 5px 10px;
 }
 
+@media (min-width: 600px) {
+  h1 {
+    margin: 20px 50px;
+  }
+}
+
 /* ----- header styles ----- */
 
 header{
@@ -741,7 +747,6 @@ main {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .contact-info ion-icon {
@@ -754,8 +759,25 @@ main {
 }
 
 .contact-info span {
-  width: 80%;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 15px;
+}
+
+@media (min-width: 600px) {
+  .tagline {
+    margin: 0 50px 35px;
+  }
+
+  #contact-form {
+    margin: 0 50px 40px;
+  }
+
+  .contact-info {
+    margin: 20px 50px;
+  }
+
+  .contact-info span {
+    margin: 0 0 0 10px;
+  }
 }
 
 /* ----- footer styles ----- */
