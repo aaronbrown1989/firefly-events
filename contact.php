@@ -13,9 +13,9 @@
     </form>
 
     <ul class="contact-info">
-      <li><ion-icon name="ios-home"></ion-icon> Penfold Drive, Gateway 11 Business Park, Wymondham, Norfolk, NR18 0WZ</li>
-      <li><ion-icon name="ios-call"></ion-icon> 01234-456-789</li>
-      <li><ion-icon name="ios-mail"></ion-icon> info@ffevents.co.uk</li>
+      <li><ion-icon name="ios-home"></ion-icon> <span>Penfold Drive, Gateway 11 Business Park, Wymondham, Norfolk, NR18 0WZ</span></li>
+      <li><ion-icon name="ios-call"></ion-icon> <span>01234-456-789</span></li>
+      <li><ion-icon name="ios-mail"></ion-icon> <span>info@ffevents.co.uk</span></li>
     </ul>
   </main>
 <?php include 'footer.php';?>

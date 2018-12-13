@@ -698,7 +698,7 @@ main {
 #contact-form {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0 20px 40px;
 }
 
 #contact-form label {
@@ -734,10 +734,28 @@ main {
   margin: 20px;
   padding: 0;
   list-style-type: none;
+  overflow-wrap: break-word;
 }
 
 .contact-info li {
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-info ion-icon {
+  background: #ff5400;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 25px;
+}
+
+.contact-info span {
+  width: 80%;
+  margin: 0 0 0 10px;
 }
 
 /* ----- footer styles ----- */
