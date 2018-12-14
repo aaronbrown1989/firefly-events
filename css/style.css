@@ -569,14 +569,87 @@ main {
 #testimonials {
   order: 4;
 }
+.box {
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+.vimg {
+width: 17%;
+}
+.welp {
+  position: relative;
+  top: -25px;
+}
+.img {
+width: 13%;
+align-self: center;
+}
+.padding {
+  padding-right: 5px;
+  padding-left: 20px;
+}
+.flex-con {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.rside {
+  align-self: flex-end;
+}
+.flxy {
+  display: flex;
+  justify-content: flex-end;
+}
+.quotation-marks {
+  font-size: 75px;
+  color: #ff5400;
+}
+.space {
+  display: flex;
+  align-items: center;
+}
+.poss {
+  position: relative;
+  bottom: -60px;
+  padding-right: 20px;
+}
+
 
 @media (min-width: 1200px) {
   #testimonials {
     order: 2;
     flex-basis: 50%;
   }
+  .box {
+    width: 650px;
+    box-shadow: 5px 13px 38px #888;
+    /* margin-left: 20px; -- this is for tablet */
+  }
+  .vimg {
+    width: 140px;
+    height: 100px;
+  }
+  .img {
+    width: 100px;
+    height: 100px;
+  }
+  .quotation-marks {
+    font-size: 75px;
+    color: #ff5400;
+  }
+  .space {
+    padding: 10px;
+  }
+  .poss {
+  position: relative;
+  right: 415px;
+  bottom: -40px;
+  }
 }
+@media (min-width: 900px) {
 
+}
 /* ----- partners styles ----- */
 #partners {
   order: 5;
