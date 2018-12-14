@@ -3,12 +3,12 @@
     <h1>Contact Us</h1>
     <p class="tagline">If you want to hire us for your event or just touch base, fill in the form below or give us a call!</p>
     <form id="contact-form">
-      <label>Name</label>
-      <input type="text" />
-      <label>Email</label>
-      <input type="email" />
-      <label>Message</label>
-      <textarea></textarea>
+      <label for="contact-name">Name</label>
+      <input type="text" name="name" id="contact-name" />
+      <label for="contact-email">Email</label>
+      <input type="email" name="email" id="contact-email" />
+      <label for="contact-message">Message</label>
+      <textarea name="message" id="contact-message"></textarea>
       <button class="button" type="submit">Send</button>
     </form>
 

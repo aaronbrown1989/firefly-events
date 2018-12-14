@@ -79,7 +79,7 @@ header{
 
 #burger div{
   height: 4px;
-  background-color: #ff5000;
+  background-color: #ff5400;
 }
 
 @media (min-width: 600px){
@@ -732,6 +732,11 @@ main {
   -moz-box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
   -webkit-box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
   box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: #ff5400 auto 5px;
 }
 
 #contact-form textarea {
