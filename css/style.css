@@ -409,6 +409,7 @@ main {
   font-family: 'Raleway', sans-serif;
   background-color: #333d47;
   padding: 20px;
+  margin: 0 0 70px;
 }
 
 #about p {
@@ -519,6 +520,7 @@ main {
       order: 1;
       flex-basis: 50%;
       margin: 25px 25px 25px 0px;
+      align-self: flex-start;
     }
 
     .about-content {
@@ -568,12 +570,92 @@ main {
 /* ----- testimonials styles ----- */
 #testimonials {
   order: 4;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0;
+  align-items: center;
+  font-size: 14px;
+}
+
+.testimony-container {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 20px;
+}
+
+.testimony-logo {
+  width: 40%;
+  max-width: 100px;
+  align-self: center;
+  margin: 0 0 20px;
+}
+
+.testimony {
+  display: flex;
+  margin: 0 auto;
+}
+
+.testimony::before,
+.testimony::after {
+  font-size: 30px;
+  color: #ff5400;
+}
+
+.testimony::before {
+  content: "\1f676";
+  margin: 0 10px 0 0;
+}
+
+.testimony::after {
+  content: "\1f677";
+  margin: 0 0 0 10px;
+  align-self: flex-end;
+}
+
+#testimonials .button {
+  align-self: flex-end;
+}
+
+@media (min-width: 600px) {
+  #testimonials {
+    margin: 0 25px;
+  }
+
+  .testimony-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .testimony-logo {
+    width: 20%;
+    max-width: 150px;
+    padding: 0 20px 0 0;
+    margin: 0;
+  }
+
+  .testimony-container:nth-child(even) .testimony-logo {
+    padding: 0 0 0 20px;
+    order: 2;
+  }
+}
+
+@media (min-width: 900px) {
+  #testimonials {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1200px) {
   #testimonials {
     order: 2;
-    flex-basis: 50%;
+    flex-basis: 47%;
+    margin: 25px 0;
+    align-self: flex-start;
   }
 }
 
@@ -961,4 +1043,12 @@ footer li {
     padding: 0;
     align-self: center;
   }
+}
+
+/*---clear fix--*/
+/*if need to remove feal free*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
