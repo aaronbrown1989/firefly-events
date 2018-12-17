@@ -35,9 +35,9 @@
           <button class="button">Read More...</button>
         </div>
         <div class="about-pictures">
-          <img class="about-pp" src="https://raw.githubusercontent.com/hoytcodes/firefly-events/master/img/about/about-one.png">
-          <img class="about-pp" src="https://raw.githubusercontent.com/hoytcodes/firefly-events/master/img/about/about-two.png">
-          <img class="about-pp about-pp-last" src="https://raw.githubusercontent.com/hoytcodes/firefly-events/master/img/about/about-three.png">
+          <img class="about-pp" src="img/about/about-one.png">
+          <img class="about-pp" src="img/about/about-two.png">
+          <img class="about-pp about-pp-last" src="img/about/about-three.png">
         </div>
       </section>
 
