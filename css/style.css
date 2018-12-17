@@ -570,9 +570,8 @@ main {
   order: 4;
 }
 .box {
-  border: 2px solid rgba(0,0,0,0.1);
   border-radius: 20px;
-  width: 80%;
+  box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6)
 }
 .vimg {
 width: 17%;
@@ -582,8 +581,7 @@ width: 13%;
 align-self: center;
 }
 .padding {
-  padding-right: 5px;
-  padding-left: 10px;
+  padding: 10px;
 }
 .flex-con {
   display: flex;
@@ -599,21 +597,36 @@ align-self: center;
   display: flex;
   justify-content: flex-end;
 }
-.quotation-marks {
-  font-size: 75px;
+.quotation-marks-s,
+.quotation-marks-e {
+  font-size: 70px;
   color: #ff5400;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+}
+.quotation-marks-s {
+  float: left;
+  clear: both;
+}
+.quotation-marks-e {
+  float: right;
+  clear: both;
+}
+.spaces {
+  line-height: 1.5em;
+}
+.spaces::before {
+  content: "\201C";
+   display: none;
+}
+.spaces::after {
+  content: "\201D";
+  display: none;
 }
 .space {
   display: flex;
   align-items: center;
-}
-.poss {
-  position: relative;
-  bottom: -60px;
-  padding-right: 10px;
-}
-.marg {
-  margin-right: 80px;
 }
 
 @media (min-width: 1200px) {
@@ -637,11 +650,6 @@ align-self: center;
     top: -30px;
     width: 20%;
   }
-  .padding {
-    padding-right: 5px;
-    padding-left: 10px;
-  }
-  /*-need edit-*/
   .flex-con {
     display: flex;
     flex-direction: column;
@@ -651,27 +659,28 @@ align-self: center;
   .rside {
     align-self: flex-end;
   }
-  .flxy {
-    display: flex;
-    justify-content: flex-end;
+  .quotation-marks-e {
+    position: relative;
+    top: 30px;
+    right: 0;
   }
-  /**/
-  .poss {
-  right: 45px;
-  bottom: -25px;
+  .spaces::before {
+    content: "\201C";
+    font-size: 70px;
+    color: #ff5400;
+    position: relative;
+    top: 32px;
+    display: inline-block;
   }
-  .lax{
-    bottom: -37px;
-    right: 410px;
+  .spaces::after {
+    content: "\201D";
+    font-size: 70px;
+    color: #ff5400;
+    display: inline-block;
   }
-  .marg {
-    margin-right: 0;
-  }
-  .wid{
-    width:120px;
-  }
-  .fin{
-    right: 85px;
+  .quotation-marks-s,
+  .quotation-marks-e {
+    display: none;
   }
 }
 /* ----- partners styles ----- */
@@ -1058,4 +1067,12 @@ footer li {
     padding: 0;
     align-self: center;
   }
+}
+
+/*---clear fix--*/
+/*if need to remove feal free*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
