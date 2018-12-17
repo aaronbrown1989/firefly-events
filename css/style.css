@@ -572,13 +572,10 @@ main {
 .box {
   border: 2px solid rgba(0,0,0,0.1);
   border-radius: 20px;
+  width: 80%;
 }
 .vimg {
 width: 17%;
-}
-.welp {
-  position: relative;
-  top: -25px;
 }
 .img {
 width: 13%;
@@ -586,13 +583,14 @@ align-self: center;
 }
 .padding {
   padding-right: 5px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .flex-con {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
+  align-items: center;
 }
 .rside {
   align-self: flex-end;
@@ -612,9 +610,11 @@ align-self: center;
 .poss {
   position: relative;
   bottom: -60px;
-  padding-right: 20px;
+  padding-right: 10px;
 }
-
+.marg {
+  margin-right: 80px;
+}
 
 @media (min-width: 1200px) {
   #testimonials {
@@ -622,9 +622,7 @@ align-self: center;
     flex-basis: 50%;
   }
   .box {
-    width: 650px;
-    box-shadow: 5px 13px 38px #888;
-    /* margin-left: 20px; -- this is for tablet */
+    width: 100%;
   }
   .vimg {
     width: 140px;
@@ -634,21 +632,47 @@ align-self: center;
     width: 100px;
     height: 100px;
   }
-  .quotation-marks {
-    font-size: 75px;
-    color: #ff5400;
+  .film-fes {
+    position: relative;
+    top: -30px;
+    width: 20%;
   }
-  .space {
-    padding: 10px;
+  .padding {
+    padding-right: 5px;
+    padding-left: 10px;
   }
+  /*-need edit-*/
+  .flex-con {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .rside {
+    align-self: flex-end;
+  }
+  .flxy {
+    display: flex;
+    justify-content: flex-end;
+  }
+  /**/
   .poss {
-  position: relative;
-  right: 415px;
-  bottom: -40px;
+  right: 45px;
+  bottom: -25px;
   }
-}
-@media (min-width: 900px) {
-
+  .lax{
+    bottom: -37px;
+    right: 410px;
+  }
+  .marg {
+    margin-right: 0;
+  }
+  .wid{
+    width:120px;
+  }
+  .fin{
+    right: 85px;
+  }
 }
 /* ----- partners styles ----- */
 #partners {
