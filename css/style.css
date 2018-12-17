@@ -544,18 +544,336 @@ main {
 /* ----- services styles ----- */
 #services {
   order: 2;
+  padding: 0 35px;
+}
+/* -----MI Breakpoint------ */
+
+#services-header{
+  font-weight: 600;
+  font-style: italic;
+  font-size: 38px;
+  margin-top: 70px;
 }
 
-@media (min-width: 1200px) {
-  #services {
-    order: 3;
-    flex: 3 100%;
+/*--Image cards--*/
+#services-img-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-img{
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat:no-repeat;
+  position: relative;
+}
+
+#services-security{
+  background-image: linear-gradient(rgba(50,50,50,0.4),rgba(50,50,50,0)), url('./../img/services/security.png');
+  background-position: 0 0, 0 0px;
+}
+
+#services-catering{
+  background-image: linear-gradient(rgba(50,50,50,0.6),rgba(50,50,50,0)),  url('./../img/services/catering.png');
+  background-position: 0 0, 0 0px;
+}
+
+#services-hosting{
+  background-image: linear-gradient(rgba(50,50,50,0.6),rgba(50,50,50,0)),  url('./../img/services/hosting.png');
+  background-position: 0 0, 0 0px;
+}
+
+.services-img:nth-of-type(2){
+  margin: 22px 0;
+}
+
+/*--Image card icons--*/
+#services-security-text::after,
+#services-catering-text::after,
+#services-hosting-text::after{
+  content: ' ';
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-size: 100%;
+  top:15px;
+  left:30px;
+}
+
+
+#services-security-text::after{
+  background-image: url('./../img/services/locked.svg');
+}
+
+#services-catering-text::after{
+  background-image: url('./../img/services/food-drink.svg');
+}
+
+#services-hosting-text::after{
+  background-image: url('./../img/services/cloud.svg');
+  width: 35px;
+  height: 35px;
+  left: 25px;
+}
+/*--Card overlay--*/
+.services-overlay-text{
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  display: block;
+  line-height:120px;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+/* ----MII Breakpoint -----*/
+@media(min-width:470px){
+   #services-security{
+    background-position: 0 0, 0 -52px;
+  }
+
+  #services-catering{
+    background-position: 0 0, 0 -16px;
+  }
+
+  #services-hosting{
+    background-position: 0 0, 0 -63px;
+  }
+}
+/* ----MIII Breakpoint----*/
+@media (min-width: 550px){ /*overlay text/icon increase*/
+  .services-overlay-text{
+    width: 120px;
+    line-height:155px;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+  }
+
+  #services-security-text::after,
+  #services-catering-text::after,
+  #services-hosting-text::after{
+    width: 40px;
+    height: 40px;
+    top:20px;
+    left:40px;
+  }
+
+  #services-hosting-text::after{
+    background-image: url('./../img/services/cloud.svg');
+    width: 45px;
+    height: 45px;
+    left: 37px;
+  }
+
+  .services-img:nth-of-type(2){
+    margin: 30px 0;
   }
 }
 
+@media (min-width: 630px){
+  #services-security{
+   background-position: 0 0, 0 -114px;
+ }
+
+ #services-catering{
+   background-position: 0 0, 0 -86px;
+ }
+
+ #services-hosting{
+   background-position: 0 0, 0 -101px;
+ }
+}
+
+/* ----TI Breakpoint ---- */
+@media (min-width: 770px){
+  #services-header{
+    text-align: center;
+  }
+
+  #services-img-container{
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+  /*--Diamond card shape/layout--*/
+  .services-img{
+    padding-top: 28%;
+    padding-left: 28%;
+    height: 0;
+    width: 0;
+    border-radius: 6px;
+    transform: rotate(45deg);
+    border: 1px solid rgba(200,200,200,0.6);
+  }
+
+  #services-security{
+    margin: 0 -100px;
+  }
+
+  #services-security,
+  #services-catering,
+  #services-hosting {
+    background-image: none;
+    position: relative;
+    overflow: hidden;
+  }
+  /*- order changes -*/
+  #services-security{
+    order:2;
+    z-index: 2;
+  }
+  #services-catering{
+    order: 3;
+  }
+
+  /*--Background image--*/
+  #services-security::before,
+  #services-hosting::before,
+  #services-catering::before{
+    content: ' ';
+    height: 200%;
+    width: 200%;
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    background-position: 50%;
+    background-size: 106%;
+    background-repeat: no-repeat;
+    transform: rotate(-45deg);
+  }
+
+  #services-security::before{
+    background-image: linear-gradient(rgba(50,50,50,0.6),rgba(50,50,50,0)), url('./../img/services/security.png');
+  }
+
+  #services-catering::before{
+    background-image: linear-gradient(rgba(50,50,50,0.6),rgba(50,50,50,0)),  url('./../img/services/catering.png');
+  }
+
+  #services-hosting::before{
+    background-image: linear-gradient(rgba(50,50,50,0.5),rgba(50,50,50,0)),  url('./../img/services/hosting.png');
+  }
+
+  /*--Overlay icons--*/
+  #services-security-text::after,
+  #services-catering-text::after,
+  #services-hosting-text::after{
+    width: 25px;
+    height: 25px;
+    top:20px;
+    left:37%;
+  }
+
+  #services-hosting-text::after{
+    height: 30px;
+    width: 30px;
+    top: 19px;
+  }
+
+  /*--Overlay text--*/
+  .services-overlay-text{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    font-size: 20px;
+    line-height: 118px;
+  }
+}
+/* ---- TII Breakpoint ---- */
+@media (min-width: 975px){
+  /*--Overlay icons--*/
+  #services-security-text::after,
+  #services-catering-text::after,
+  #services-hosting-text::after{
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    left: 35%;
+  }
+
+  #services-hosting-text::after{
+    height: 40px;
+    width: 40px;
+    top: 10px;
+  }
+
+  /*--Overlay text--*/
+  .services-overlay-text{
+    top: 10px;
+    left: 10px;
+    font-size: 26px;
+  }
+}
+
+/*--- DI Breakpoint ---*/
+@media (min-width: 1200px) {
+
+  #template{
+    order: 2;
+    flex-basis: 47%;
+    height: 400px;
+  }
+
+  #services {
+    order: 3;
+    flex: 3 100%;
+    margin-bottom: 50px;
+  }
+
+
+  #services-header{
+    text-align: left;
+    margin-bottom: 70px;
+  }
+  .services-img{
+    width: 320px;
+    height: 320px;
+    padding:0;
+  }
+
+  #services-security{
+    margin: 0 -140px;
+  }
+
+  #services-security-text::after,
+  #services-catering-text::after,
+  #services-hosting-text::after{
+    width: 45px;
+    height: 45px;
+    top: -3px;
+    left: 31%;
+  }
+
+  #services-hosting-text::after{
+    height: 50px;
+    width: 50px;
+    top: -3px;
+  }
+
+  /*--Overlay text--*/
+  .services-overlay-text{
+    top: 25px;
+    left: 25px;
+    font-size: 28px;
+  }
+}
+
+
+
+
+
+
 /* ----- latest-news styles ----- */
 #latest-news {
-  order: 3;
+  order: 4;
 }
 
 @media (min-width: 1200px) {
@@ -567,7 +885,7 @@ main {
 
 /* ----- testimonials styles ----- */
 #testimonials {
-  order: 4;
+  order: 5;
 }
 
 @media (min-width: 1200px) {
