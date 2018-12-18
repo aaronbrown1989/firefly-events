@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i" rel="stylesheet">
-    <title></title>
+    <title>Firefly Events</title>
   </head>
   <body>
 
     <header>
       <div id="mob-header">
-        <img id="mob-logo" src="./img/logo/logo-dark-small.png"/>
+        <img id="mob-logo" src="img/logo/logo-dark-small.png"/>
         <div id="burger">
           <div></div>
           <div></div>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div id="desk-header">
-        <img id="desk-logo" src="./img/logo/logo-light.png" />
+        <img id="desk-logo" src="img/logo/logo-light.png" />
         <ul id="desk-nav">
           <li>Home</li>
           <li>What's on</li>
