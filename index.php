@@ -42,6 +42,18 @@
       </section>
 
       <section id="services">
+        <h2 class="section-header">Services</h2>
+        <div id="services-img-container">
+          <div id="services-security" class="services-img">
+            <span id="services-security-text" class="services-overlay-text">Security</span>
+          </div>
+          <div id="services-catering" class="services-img">
+            <span id="services-catering-text" class="services-overlay-text">Catering</span>
+          </div>
+          <div id="services-hosting" class="services-img">
+            <span id="services-hosting-text" class="services-overlay-text">Hosting</span>
+          </div>
+        </div>
       </section>
 
       <section id="latest-news">

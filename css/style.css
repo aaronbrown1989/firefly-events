@@ -464,7 +464,7 @@ main {
 
   #about{
     border-radius: 10px;
-    margin: 25px;
+    margin: 25px 25px 70px;
     justify-content: space-between;
   }
 
@@ -569,6 +569,7 @@ main {
 #services {
   order: 2;
   padding: 0 35px;
+  margin: 0 0 70px;
 }
 
 /*--Image cards--*/
@@ -619,7 +620,6 @@ main {
   top:15px;
   left:30px;
 }
-
 
 #services-security-text::after{
   background-image: url('./../img/services/locked.svg');
