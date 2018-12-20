@@ -57,6 +57,39 @@
       </section>
 
       <section id="latest-news">
+        <h2 class="section-header section-header-news">Latest News</h2>
+        <div class="latest-news-container">
+          <div class="news-1 news-card">
+            <h3 class="news-header">
+              Helm Project
+            </h3>
+            <p class="news-text">
+              Last week our team took part in a join project with one of our clients 'Helm' which involved creating a new hosting system that could possibly be adopted by countless other festival service providers
+            </p>
+            <button class="button">Read More...</button>
+          </div>
+          <div class="mobile-break">
+            <hr>
+          </div>
+          <div class="news-2 news-card">
+            <h3 class="news-header">
+              Helm Project
+            </h3>
+            <p class="news-text">
+              Last week our team took part in a join project with one of our clients 'Helm' which involved creating a new hosting system that could possibly be adopted by countless other festival service providers
+            </p>
+            <button class="button">Read More...</button>
+          </div>
+          <div class="news-3 news-card">
+            <h3 class="news-header">
+              Helm Project
+            </h3>
+            <p class="news-text">
+              Last week our team took part in a join project with one of our clients 'Helm' which involved creating a new hosting system that could possibly be adopted by countless other festival service providers
+            </p>
+            <button class="button">Read More...</button>
+          </div>
+        </div>
       </section>
 
       <section id="testimonials">
