@@ -817,13 +817,6 @@ main {
 
 /*--- DI Breakpoint ---*/
 @media (min-width: 1200px) {
-
-  #template{
-    order: 2;
-    flex-basis: 47%;
-    height: 400px;
-  }
-
   #services {
     order: 3;
     flex: 3 100%;
