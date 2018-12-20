@@ -932,6 +932,7 @@ main {
   .news-card {
     margin: 16px;
     width: 33%;
+    border-radius: 10px;
   }
 
   .mobile-break {
