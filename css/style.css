@@ -27,7 +27,7 @@ h2.section-header {
 }
 
 p {
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .button{
@@ -424,7 +424,8 @@ main {
 }
 
 /* ----- about styles ----- */
-#about {
+#about,
+#about-page {
   order: 1;
   color:white;
   display: flex;
@@ -434,7 +435,8 @@ main {
   margin: 0 0 70px;
 }
 
-#about p {
+#about p,
+#about-page p {
   margin: 0 0 20px;
 }
 
@@ -462,7 +464,8 @@ main {
 /* about media queries --------------- */
 @media only screen and (min-width: 600px){
 
-  #about{
+  #about,
+  #about-page {
     border-radius: 10px;
     margin: 25px 25px 70px;
     justify-content: space-between;
@@ -538,7 +541,7 @@ main {
 }
 
 @media only screen and (min-width: 1200px) {
-  #about{
+  #about {
     order: 1;
     flex-basis: 50%;
     margin: 25px 25px 25px 0px;
@@ -1176,6 +1179,99 @@ main {
   }
 }
 
+/* ----- about page styles ----- */
+
+.our-team {
+  order: 2;
+  margin: 0 20px 20px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-card-img {
+  width: 200px;
+  margin-right: 15px;
+  border-radius: 5%;
+}
+
+h3.member-name {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 0 5px;
+}
+
+p.member-title {
+  margin: 0;
+}
+
+.our-history {
+    order: 3;
+    color: white;
+    background-color: #333d47;
+    padding: 20px;
+    margin-bottom: -20px;
+}
+
+@media (min-width: 600px) {
+  .our-history {
+    border-radius: 10px;
+    margin: 25px 25px;
+  }
+
+  .our-team {
+    order: 2;
+    margin: 0 25px 20px;
+  }
+}
+
+@media (min-width: 750px) {
+  .team-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about-card {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #about-page {
+    order: 1;
+    flex-basis: 100%;
+    margin: 25px 0px;
+    align-self: flex-start;
+  }
+
+  .our-team {
+    margin: 25px 0;
+    width: 100%;
+  }
+
+  .about-card {
+    flex-basis: 33%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-card-img {
+    margin: 0 0 20px;
+  }
+
+  .our-history {
+    margin: 25px 0;
+  }
+}
+
 /* ----- testimonials page styles ----- */
 
 .attribution {
@@ -1484,12 +1580,4 @@ footer li {
     padding: 0;
     align-self: center;
   }
-}
-
-/*---clear fix--*/
-/*if need to remove feal free*/
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
