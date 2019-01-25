@@ -136,6 +136,7 @@ header{
   #desk-nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   #desk-nav>li{
@@ -144,6 +145,7 @@ header{
     letter-spacing: 0.2px;
     font-size: 17px;
     margin-left: 40px;
+    text-align: center;
   }
 }
 
