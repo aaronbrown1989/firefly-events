@@ -105,12 +105,13 @@ section>ul>li:not(:last-of-type){
     font-size: 28px;
   }
 
+  
   section:not(#intro){
     box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
     border-radius: 10px;
     padding: 35px 50px 50px;
   }
-
+  
   .carousel{
     margin: 40px 0;
   }
@@ -120,25 +121,20 @@ section>ul>li:not(:last-of-type){
   main{
     width: 800px;
   }
-
+  
   .slide,
   .carousel{
     height: 300px;
   }
-
-  .carousel{
-    margin: 50px 0;
-  }
-
-  section:not(#intro){
-    margin-bottom: 80px;
-    padding: 40px 50px 50px;
-  }
-
+  
   .carousel{
     margin: 30px 0 40px;
   }
-
+  
+  section:not(#intro){
+    margin-bottom: 80px;
+    padding: 40px 50px 50px;
+  } 
 }
 
 @media(min-width: 1200px){
@@ -147,23 +143,19 @@ section>ul>li:not(:last-of-type){
     flex-wrap: wrap;
     width: 1050px;
     justify-content: space-between; 
-    margin: 0 auto;
   }
-
+  
   main{
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
     padding:0;
   }
-
-  #catering{
-    width: 600px;
-  }
-
+   
   section:not(intro){
     width: 500px;
-  }
+  } 
 }
+
 
 @media (min-width: 1400px){
   #flex-container,
@@ -173,26 +165,23 @@ section>ul>li:not(:last-of-type){
   section:not(#intro){
     width: 580px;
   }
-
-  h2{
-    font-size: 28px;
-  }
+   
 }
 
 @media (min-width: 1600px){
   body{
     font-size: 17px;
   }
-
+  
   section:not(#intro){
     width: 475px;
   }
-
+  
   main,
   #flex-container{
     width: 1500px;
   }
-
+  
   section:not(#intro){
     padding: 35px 50px;
   }
@@ -202,12 +191,15 @@ section>ul>li:not(:last-of-type){
   section:not(#intro){
     width: 550px;
   }
-
+  
   main,
   #flex-container{
     width: 1700px;
   }
 }
+
+
+
 
 /* ----- header styles ----- */
 header{
@@ -233,7 +225,6 @@ header{
 #burger {
   height: 37px;
   width: 50px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -254,11 +245,11 @@ header{
   header {
     padding: 0px 25px;
   }
-
+  
   #mob-header{
     display: none;
   }
-
+  
   #desk-header{
     display: flex;
     justify-content: space-between;
@@ -268,17 +259,17 @@ header{
     padding: 0px;
     max-width: 1300px;
   }
-
+  
   #desk-logo{
     width: 300px;
   }
-
+  
   #desk-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
+  
   #desk-nav>li{
     list-style: none;
     color: white;
@@ -309,18 +300,43 @@ header{
   color: #ff5400;
 }
 
+@media(min-width: 700px){
+  #intro>h2{
+    font-size: 30px;
+  }
+}
+
 @media (min-width: 1200px){
   #intro{
+    width: 760px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-    width: 800px;
   }
 }
+
+@media (min-width: 1400px){
+  #intro{
+    width: 870px;
+  }
+
+  #intro>h2{
+    font-size: 32px;
+  }
+}
+
 
 @media (min-width: 1600px){
   #intro{
     margin: 50px auto 100px;
+    width: 1180px;
+  }
+}
+
+@media (min-width: 1800px){
+  #intro{
+    margin: 50px auto 100px;
+    width: 1370px;
   }
 }
 
@@ -387,6 +403,7 @@ header{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
+    width: 600px;
   }
 }
 @media (min-width: 1600px){
@@ -396,6 +413,9 @@ header{
     order: 2;
   }
 }
+
+
+
 
 /* ---- Hosting styles ---- */
 .car-park-slide{
