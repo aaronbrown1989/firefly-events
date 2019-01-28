@@ -159,9 +159,13 @@ section>ul>li:not(:last-of-type){
     font-size: 18px;
   }
 
-  section{
+  section,
+  .carousel,
+  .slide{
     width: 400px;
   }
+
+
 
   main,
   #flex-container{
