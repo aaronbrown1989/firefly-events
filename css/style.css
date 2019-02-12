@@ -1589,7 +1589,7 @@ footer li {
   width: 500px;
   height: 70px;
   border-radius: 20px;
-  color: white
+  color: black;
 }
 .event_1{
   width: 40%;
@@ -1600,6 +1600,7 @@ footer li {
   width: 40%;
   height: 200px;
   float: right;
+  margin-bottom: 10px;
 }
 .font{
   color: black;
@@ -1607,9 +1608,14 @@ footer li {
 }
 .carasell{
   clear: both;
+  color: black;
+  object-fit: cover;
 }
 .fix{
+  width: 100%;
   height: 500px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .card{
   border: 1px solid black;
@@ -1627,4 +1633,24 @@ footer li {
 }
 .bg-info{
   background-color: #ff5400;
+}
+.mid{
+  position: relative;
+  left: 610px;
+  top: 160px;
+  color: black;
+  text-decoration: none;
+}
+.low{
+  position: relative;
+  top: 160px;
+}
+.side{
+  position: relative;
+  left: 180px;
+  color: black;
+  text-decoration: none;
+}
+.hover:hover{
+  text-decoration: underline;
 }
