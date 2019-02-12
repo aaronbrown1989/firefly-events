@@ -1583,118 +1583,248 @@ footer li {
     align-self: center;
   }
 }
-/*test code*/
-.event_1,
-.event_2{
-  margin-top: 5px;
-  border: 1px solid black;
-  width: 500px;
-  height: 70px;
-  border-radius: 20px;
-  color: black;
+/*Whats on page*/
+
+/* medias for Whats on page */
+@media (min-width:320px) {
+  .event_1,
+  .event_2{
+    margin-top: 5px;
+    border: 1px solid black;
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    color: black;
+  }
+  .event_1{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+      ),url(../img/carousel/carousel-one.jpg);
+  }
+  .event_2{
+    height: 300px;
+    float: right;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+      ),url(../img/carousel/carousel-two.jpg);
+  }
+  .font{
+    color: black;
+    height: 500px;
+  }
+  .carasell{
+    clear: both;
+    color: black;
+    object-fit: cover;
+  }
+  .fix1,
+  .fix2,
+  .fix3{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .fix1{
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+      ),url(../img/carousel/carousel-one.jpg);
+  }
+  .fix2{
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+      ),url(../img/carousel/carousel-two.jpg);
+  }
+  .fix3{
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+      ),url(../img/carousel/carousel-three.jpg);
+  }
+  .card{
+    border: 1px solid black;
+    width: 240px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    background-color: #333d47;
+    color:white;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+  .form-inline{
+    position: relative;
+    left: 50px;
+    width: 180px;
+  }
+  .bg-info{
+    background-color: #ff5400;
+  }
+  .mid{
+    position: relative;
+    left: 100px;
+    bottom: 15px;
+    color: black;
+    text-decoration: none;
+    max-width: 150px;
+  }
+  .low{
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    bottom: 20px;
+  }
+  .side{
+    position: relative;
+    left: 90px;
+    color: black;
+    text-decoration: none;
+    max-width: 150px;
+  }
+  .hover{
+    bottom: 30px;
+  }
+  .hover:hover{
+    text-decoration: underline;
+  }
+  div > table > tbody > tr > td:hover{
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .convert_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .article_1{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .article_2{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .article_3{
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .article_1_image,
+  .article_2_image,
+  .article_3_image {
+    width: 100%;
+    height:100px;
+  }
+  .slick-dots li button::before{
+    color: #797373
+  }
+  .up{
+    position: relative;
+    bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
-.event_1{
-  width: 40%;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+@media (min-width:600px) {
+  .side{
+    left: 225px;
+  }
+  .mid{
+    left: 225px;
+  }
+  .card{
+    margin-left: 170px;
+  }
 }
-.event_2{
-  width: 40%;
-  height: 200px;
-  float: right;
-  margin-bottom: 10px;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+@media (min-width:900px) {
+  .side{
+    left:165px;
+  }
+  .event_1,
+  .event_2{
+    margin-top: 5px;
+    border: 1px solid black;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    color: black;
+  }
+  .mid{
+    left: 392px;
+  }
+  .card{
+    float: right;
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .convert_box{
+    width: 72%;
+  }
+  .article_1,
+  .article_2{
+    width: 49%;
+    margin-top: 0;
+  }
+  .article_1{
+    margin-right: 5px;
+  }
 }
-.font{
-  color: black;
-  height: 500px;
+
+@media (min-width:1200px) {
+  .side{
+    left:235px;
+  }
+  .mid{
+    left: 550px;
+  }
+  .convert_box{
+    width: 79%;
+  }
 }
-.carasell{
-  clear: both;
-  color: black;
-  object-fit: cover;
-}
-.fix{
-  width: 100%;
-  height: 500px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.card{
-  border: 1px solid black;
-  width: 240px;
-  float: right;
-  padding-left: 5px;
-  padding-bottom: 5px;
-  background-color: #333d47;
-  color:white;
-}
-.form-inline{
-  position: relative;
-  left: 50px;
-}
-.bg-info{
-  background-color: #ff5400;
-}
-.mid{
-  position: relative;
-  left: 820px;
-  top: 160px;
-  color: black;
-  text-decoration: none;
-}
-.low{
-  position: relative;
-  top: 160px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.side{
-  position: relative;
-  left: 310px;
-  color: black;
-  text-decoration: none;
-}
-.hover:hover{
-  text-decoration: underline;
-}
-div > table > tbody > tr > td:hover{
-  font-weight: bold;
-  cursor: pointer;
-}
-.convert_box{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 50px;
-}
-.article_1{
-  width: 50%;
-  margin-right: 20px;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.article_2{
-  width: 40%;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.article_3{
-  width: 50%;
-  border: 1px solid black;
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.article_1_image,
-.article_2_image,
-.article_3_image {
-  width: 100%;
-  height:100px;
+
+@media (min-width:1800px) {
+  .side{
+    left:380px;
+  }
+  .mid{
+    left:865px;
+  }
+  .convert_box{
+    width: 86%;
+  }
+  .article_1{
+    margin-left: 20px;
+  }
+  .event_1,
+  .event_2{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
