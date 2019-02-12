@@ -1654,3 +1654,7 @@ footer li {
 .hover:hover{
   text-decoration: underline;
 }
+div > table > tbody > tr > td:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
