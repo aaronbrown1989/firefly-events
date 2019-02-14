@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.carasell').slick({
+  $('.event-carousel').slick({
     adaptiveHeight: false,
     autoplay: true,
     arrows: false,
