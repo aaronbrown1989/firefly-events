@@ -1587,35 +1587,6 @@ footer li {
 
 /* medias for Whats on page */
 @media (min-width:320px) {
-  .event_1,
-  .event_2{
-    margin-top: 5px;
-    border: 1px solid black;
-    width: 100%;
-    height: 70px;
-    border-radius: 20px;
-    color: black;
-  }
-  .event_1{
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
-      ),url(../img/carousel/carousel-one.jpg);
-  }
-  .event_2{
-    height: 300px;
-    float: right;
-    margin-bottom: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
-      ),url(../img/carousel/carousel-two.jpg);
-  }
   .font{
     color: black;
     height: 500px;
@@ -1658,7 +1629,8 @@ footer li {
     padding-bottom: 5px;
     background-color: #333d47;
     color:white;
-    margin-left: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 10px;
   }
   .form-inline{
@@ -1713,6 +1685,7 @@ footer li {
     flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 10px;
   }
   .article_2{
     width: 100%;
@@ -1724,19 +1697,8 @@ footer li {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .article_3{
-    width: 100%;
-    border: 1px solid black;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
   .article_1_image,
-  .article_2_image,
-  .article_3_image {
+  .article_2_image {
     width: 100%;
     height:100px;
   }
@@ -1749,6 +1711,24 @@ footer li {
     padding-left: 5px;
     padding-right: 5px;
   }
+  .Whats_on_title{
+    font-size: 50px;
+    margin: 10px;
+  }
+  .articleheader{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .Read_more{
+    background-color: #333d47;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .newsHeader{
+    font-size: 26px;
+    margin: 10px;
+  }
 }
 
 @media (min-width:600px) {
@@ -1760,6 +1740,7 @@ footer li {
   }
   .card{
     margin-left: 170px;
+
   }
 }
 
@@ -1780,9 +1761,9 @@ footer li {
     left: 392px;
   }
   .card{
-    float: right;
-    margin-right: 10px;
-    margin-left: 0;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .convert_box{
     width: 72%;
@@ -1790,7 +1771,6 @@ footer li {
   .article_1,
   .article_2{
     width: 49%;
-    margin-top: 0;
   }
   .article_1{
     margin-right: 5px;
