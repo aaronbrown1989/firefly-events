@@ -37,6 +37,7 @@ p {
   color: #fff;
   font-size: 16px;
   padding: 5px 10px;
+  text-decoration: none;
 }
 
 @media (min-width: 600px) {
@@ -1575,9 +1576,255 @@ footer li {
     order: 0;
     align-self: center;
   }
+
   .order{
     order: 1;
     padding: 0;
     align-self: center;
+  }
+}
+/*Whats on page*/
+
+/* medias for Whats on page */
+
+.event-carousel{
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.event-slide {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px 20px 40px;
+}
+
+.fix1{
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+    ),url(../img/carousel/carousel-one.jpg);
+}
+
+.fix2{
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+    ),url(../img/carousel/carousel-two.jpg);
+}
+
+.fix3{
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+    ),url(../img/carousel/carousel-three.jpg);
+}
+
+.events-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px 40px;
+}
+
+h3.calendar-header {
+  margin: 0 0 10px;
+}
+
+.calendar {
+  border-radius: 10px;
+  padding: 20px 10px;
+  background-color: #333d47;
+  color:white;
+  margin: 0 0 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 275px;
+}
+
+.calendar table {
+  margin: 0 auto 10px;
+}
+
+.calendar table td,
+.calendar table th {
+  padding: 2px;
+}
+
+.form-inline{
+  text-align: center;
+}
+
+.bg-info{
+  border-radius: 5px;
+  background-color: #ff5400;
+}
+
+.muted {
+  color: rgba(51, 61, 71, 0.5);
+  text-align: center;
+  margin: 20px;
+}
+
+h3.event-title {
+  color: #333d47;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  max-width: 150px;
+}
+
+.event-body {
+  color: #333d47;
+  margin: 0;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.event-carousel .button {
+  align-self: flex-end;
+}
+
+div > table > tbody > tr > td:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.news-articles {
+  margin: 0 20px;
+}
+
+.convert_box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.article{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0 40px;
+}
+
+.article-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+}
+
+.articleheader{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.article p {
+  margin: 0 0 auto;
+}
+
+.news-header{
+  font-weight: 700;
+  font-size: 30px;
+  font-style: italic;
+  margin: 0 0 10px;
+}
+
+@media (min-width:600px) {
+  .event-slide {
+    padding: 20px 50px 40px;
+  }
+
+  .events-calendar {
+    flex-direction: row;
+    margin: 0 50px 40px;
+  }
+
+  .calendar {
+    margin: 0 20px 10px 0;
+  }
+
+  .muted {
+    margin: 0 auto;
+  }
+
+  .news-articles {
+    margin: 0 50px;
+  }
+
+  .article-image {
+    height: 200px;
+  }
+}
+
+@media (min-width:900px) {
+  .whatson-container {
+    display: flex;
+    margin: 0 50px;
+  }
+
+  .events-calendar {
+    flex-direction: column;
+    flex-basis: 25%;
+    margin: 0;
+  }
+
+  .news-articles {
+    margin: 0 0 0 50px;
+  }
+
+  .calendar {
+    margin: 0 0 20px;
+  }
+}
+
+@media (min-width:1200px) {
+  .whatson-container {
+    margin: 0;
+  }
+
+  .event-carousel {
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .convert_box {
+    justify-content: space-between;
+  }
+
+  .article {
+    width: 48%;
+  }
+}
+
+@media (min-width:1800px) {
+  .event-carousel {
+    max-width: 1300px;
+  }
+
+  .side{
+    left:380px;
+  }
+  .mid{
+    left:865px;
+  }
+  .convert_box{
+    width: 86%;
+  }
+  .article_1{
+    margin-left: 20px;
   }
 }
