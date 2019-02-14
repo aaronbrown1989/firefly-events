@@ -1623,26 +1623,51 @@ footer li {
     rgba(255, 255, 255, 0.5)
     ),url(../img/carousel/carousel-three.jpg);
 }
-.card{
-  border: 1px solid black;
-  width: 240px;
-  padding-left: 5px;
-  padding-bottom: 5px;
+
+.events-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+h3.calendar-header {
+  margin: 0 0 10px;
+}
+
+.calendar {
+  border-radius: 10px;
+  padding: 20px 10px;
   background-color: #333d47;
   color:white;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 275px;
+}
+
+.calendar table {
+  margin: 0 auto 10px;
+}
+
+.calendar table td,
+.calendar table th {
+  padding: 2px;
 }
 
 .form-inline{
-  position: relative;
-  left: 50px;
-  width: 180px;
+  text-align: center;
 }
 
 .bg-info{
+  border-radius: 5px;
   background-color: #ff5400;
+}
+
+.muted {
+  color: rgba(51, 61, 71, 0.5);
+  text-align: center;
+  margin: 20px;
 }
 
 h3.event-title {
@@ -1732,19 +1757,24 @@ div > table > tbody > tr > td:hover{
     padding: 20px 50px 40px;
   }
 
-
-  .card{
-    margin-left: 170px;
-
+  .events-calendar {
+    flex-direction: row;
+    margin: 0 50px;
   }
 }
 
 @media (min-width:900px) {
-  .card{
-    float: left;
-    margin-left: 5px;
-    margin-right: 5px;
+  .whatson-container {
+    display: flex;
+    margin: 0 50px;
   }
+
+  .events-calendar {
+    flex-direction: column;
+    flex-basis: 25%;
+    margin: 0;
+  }
+
   .convert_box{
     width: 72%;
   }
@@ -1758,6 +1788,10 @@ div > table > tbody > tr > td:hover{
 }
 
 @media (min-width:1200px) {
+  .whatson-container {
+    margin: 0;
+  }
+
   .event-carousel {
     max-width: 100%;
     border-radius: 10px;

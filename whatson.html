@@ -16,7 +16,7 @@
     <main>
       <h1>Whats On</h1>
 
-      <!--carasell  -->
+      <!--carousel  -->
       <div class="event-carousel">
         <div class="event-slide fix1">
           <h3 class="event-title">Event Name</h3>
@@ -37,11 +37,11 @@
       <div>
       </div>
       <!--Calendar -->
-        <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
-          <div class="card">
-            <p>Click a day to find out if theres an event on .</p>
-              <h3 class="card-header" id="monthAndYear"></h3>
-              <table class="table table-bordered table-responsive-sm" id="calendar">
+      <div class="whatson-container">
+        <div class="events-calendar">
+          <div class="calendar">
+              <h3 class="calendar-header" id="monthAndYear"></h3>
+              <table id="calendar">
                   <thead>
                   <tr>
                       <th>Sun</th>
@@ -55,20 +55,17 @@
                   </thead>
 
                   <tbody id="calendar-body">
-
                   </tbody>
               </table>
 
               <div class="form-inline">
-
-                  <button class="btn btn-outline-primary col-sm-6" id="previous" onclick="previous()">Previous</button>
-
-                  <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">Next</button>
+                  <button class="button" id="previous" onclick="previous()">Previous</button>
+                  <button class="button" id="next" onclick="next()">Next</button>
               </div>
               <br/>
               <form class="form-inline">
                   <label class="lead mr-2 ml-2" for="month">Jump To: </label>
-                  <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
+                  <select name="month" id="month" onchange="jump()">
                       <option value=0>Jan</option>
                       <option value=1>Feb</option>
                       <option value=2>Mar</option>
@@ -84,7 +81,7 @@
                   </select>
 
 
-                  <label for="year"></label><select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
+                  <label for="year"></label><select name="year" id="year" onchange="jump()">
                   <option value=1990>1990</option>
                   <option value=1991>1991</option>
                   <option value=1992>1992</option>
@@ -126,39 +123,43 @@
                   <option value=2028>2028</option>
                   <option value=2029>2029</option>
                   <option value=2030>2030</option>
-              </select></form>
+              </select>
+            </form>
           </div>
-      </div>
+
+          <p class="muted">Click a day to find out if there's an event on.</p>
+        </div>
 
 
       <!--news articls -->
-      <h3 class="newsHeader">News articls</h3>
-      <div class="convert_box">
-        <div class="article_1">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAC6CAMAAABRJOIbAAAAD1BMVEUAAAAEBAQHBwcPDw8SEhLhsxaDAAAAj0lEQVR4nO3WSw6AIAxAQVu8/5lFN0J3rsBk5gTNS/kcxx9F5uoR9iJIERmrR9iLDZlFtmZHBj3I2QR53RsiyKBfIenIjEKNmSCFIIUghSCz/spIMnqe3dVD7ESQIsK/DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPrkAJBoAbzvoNgEAAAAASUVORK5CYII=" alt="image for the article" class="article_1_image">
-          <h2 class="articleheader">Hows the Company doing</h2>
-          <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
-          <button type="button" name="button" class="Read_more">Read More</button>
+        <h3 class="newsHeader">News articls</h3>
+        <div class="convert_box">
+          <div class="article_1">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAC6CAMAAABRJOIbAAAAD1BMVEUAAAAEBAQHBwcPDw8SEhLhsxaDAAAAj0lEQVR4nO3WSw6AIAxAQVu8/5lFN0J3rsBk5gTNS/kcxx9F5uoR9iJIERmrR9iLDZlFtmZHBj3I2QR53RsiyKBfIenIjEKNmSCFIIUghSCz/spIMnqe3dVD7ESQIsK/DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPrkAJBoAbzvoNgEAAAAASUVORK5CYII=" alt="image for the article" class="article_1_image">
+            <h2 class="articleheader">Hows the Company doing</h2>
+            <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
+            <button type="button" name="button" class="Read_more">Read More</button>
+          </div>
+          <div class="article_2">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAC6CAMAAABRJOIbAAAAD1BMVEUAAAAEBAQHBwcPDw8SEhLhsxaDAAAAj0lEQVR4nO3WSw6AIAxAQVu8/5lFN0J3rsBk5gTNS/kcxx9F5uoR9iJIERmrR9iLDZlFtmZHBj3I2QR53RsiyKBfIenIjEKNmSCFIIUghSCz/spIMnqe3dVD7ESQIsK/DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPrkAJBoAbzvoNgEAAAAASUVORK5CYII=" alt="image for the article" class="article_2_image">
+            <h2>Latesits events reviews</h2>
+            <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
+            <button type="button" name="button" class="Read_more">Read More</button>
+          </div>
+          <div class="article_1">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAC6CAMAAABRJOIbAAAAD1BMVEUAAAAEBAQHBwcPDw8SEhLhsxaDAAAAj0lEQVR4nO3WSw6AIAxAQVu8/5lFN0J3rsBk5gTNS/kcxx9F5uoR9iJIERmrR9iLDZlFtmZHBj3I2QR53RsiyKBfIenIjEKNmSCFIIUghSCz/spIMnqe3dVD7ESQIsK/DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPrkAJBoAbzvoNgEAAAAASUVORK5CYII=" alt="image for the article" class="article_1_image">
+            <h2>detales about company</h2>
+            <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
+            <button type="button" name="button" class="Read_more">Read More</button>
+          </div>
+          <div class="article_2">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAC6CAMAAABRJOIbAAAAD1BMVEUAAAAEBAQHBwcPDw8SEhLhsxaDAAAAj0lEQVR4nO3WSw6AIAxAQVu8/5lFN0J3rsBk5gTNS/kcxx9F5uoR9iJIERmrR9iLDZlFtmZHBj3I2QR53RsiyKBfIenIjEKNmSCFIIUghSCz/spIMnqe3dVD7ESQIsK/DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPrkAJBoAbzvoNgEAAAAASUVORK5CYII=" alt="image for the article" class="article_2_image">
+            <h2>events success</h2>
+            <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
+            <button type="button" name="button" class="Read_more">Read More</button>
+          </div>
         </div>
-        <div class="article_2">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAC6CAMAAABRJOIbAAAAD1BMVEUAAAAEBAQHBwcPDw8SEhLhsxaDAAAAj0lEQVR4nO3WSw6AIAxAQVu8/5lFN0J3rsBk5gTNS/kcxx9F5uoR9iJIERmrR9iLDZlFtmZHBj3I2QR53RsiyKBfIenIjEKNmSCFIIUghSCz/spIMnqe3dVD7ESQIsK/DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPrkAJBoAbzvoNgEAAAAASUVORK5CYII=" alt="image for the article" class="article_2_image">
-          <h2>Latesits events reviews</h2>
-          <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
-          <button type="button" name="button" class="Read_more">Read More</button>
-        </div>
-        <div class="article_1">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAC6CAMAAABRJOIbAAAAD1BMVEUAAAAEBAQHBwcPDw8SEhLhsxaDAAAAj0lEQVR4nO3WSw6AIAxAQVu8/5lFN0J3rsBk5gTNS/kcxx9F5uoR9iJIERmrR9iLDZlFtmZHBj3I2QR53RsiyKBfIenIjEKNmSCFIIUghSCz/spIMnqe3dVD7ESQIsK/DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPrkAJBoAbzvoNgEAAAAASUVORK5CYII=" alt="image for the article" class="article_1_image">
-          <h2>detales about company</h2>
-          <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
-          <button type="button" name="button" class="Read_more">Read More</button>
-        </div>
-        <div class="article_2">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAC6CAMAAABRJOIbAAAAD1BMVEUAAAAEBAQHBwcPDw8SEhLhsxaDAAAAj0lEQVR4nO3WSw6AIAxAQVu8/5lFN0J3rsBk5gTNS/kcxx9F5uoR9iJIERmrR9iLDZlFtmZHBj3I2QR53RsiyKBfIenIjEKNmSCFIIUghSCz/spIMnqe3dVD7ESQIsK/DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPrkAJBoAbzvoNgEAAAAASUVORK5CYII=" alt="image for the article" class="article_2_image">
-          <h2>events success</h2>
-          <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
-          <button type="button" name="button" class="Read_more">Read More</button>
-        </div>
-      </div>
+    </div>
     </main>
 
     <footer class="footer">
