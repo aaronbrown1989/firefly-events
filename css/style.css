@@ -152,6 +152,12 @@ header{
     padding: 40px 4px;
   }
 
+  #desk-nav>li>a:hover,
+  #desk-nav>li>a:active{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
   .home-link:active {
     background-color: #FF5400;
   }
