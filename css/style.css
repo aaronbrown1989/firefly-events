@@ -93,11 +93,9 @@ header{
 #burger {
   height: 37px;
   width: 50px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 #burger div{
@@ -123,7 +121,6 @@ header{
   #desk-header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 100px;
     margin: 0 auto;
     padding: 0px;
@@ -132,19 +129,84 @@ header{
 
   #desk-logo{
     width: 300px;
+    padding: 15px;
   }
 
   #desk-nav{
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
   }
 
   #desk-nav>li{
     list-style: none;
-    color: white;
     letter-spacing: 0.2px;
     font-size: 17px;
-    margin-left: 40px;
+    margin-left: 20px;
+  }
+
+  #desk-nav>li>a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 40px 6px;
+  }
+
+  #desk-nav>li>a:hover,
+  #desk-nav>li>a:active{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .home-link:active {
+    background-color: #FF5400;
+  }
+
+  .home-link:hover {
+    background: linear-gradient(to bottom, rgba(255, 84, 0,1) 0%, rgba(255, 84, 0, 0.3) 100%);
+  }
+
+  .whatson-link:active {
+    background-color: #e89005;
+  }
+
+  .whatson-link:hover {
+    background: linear-gradient(to bottom, rgba(232,144,5,1) 0%, rgba(232,144,5,0.3) 100%);
+  }
+
+  .about-link:active {
+    background-color: #7AB800;
+  }
+
+  .about-link:hover {
+    background: linear-gradient(to bottom, rgba(122, 184, 0,1) 0%, rgba(122, 184, 0, 0.3) 100%);
+  }
+
+  .services-link:active {
+    background-color: #FF5400;
+  }
+
+  .services-link:hover {
+    background: linear-gradient(to bottom, rgba(255, 84, 0,1) 0%, rgba(255, 84, 0, 0.3) 100%);
+  }
+
+  .events-link:active {
+    background-color: #ff1500;
+  }
+
+  .events-link:hover {
+    background: linear-gradient(to bottom, rgba(255, 21, 0,1) 0%, rgba(255, 21, 0, 0.3) 100%);
+  }
+
+  .contact-link:active {
+    background-color: #0070B8;
+  }
+
+  .contact-link:hover {
+    background: linear-gradient(to bottom, rgba(20, 112, 184,1) 0%, rgba(0, 112, 184, 0.3) 100%);
   }
 }
 
