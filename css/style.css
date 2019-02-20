@@ -135,13 +135,15 @@ header{
     display: flex;
     justify-content: space-between;
     margin: 0;
+    overflow: hidden;
+    padding: 0;
   }
 
   #desk-nav>li{
     list-style: none;
     letter-spacing: 0.2px;
     font-size: 17px;
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   #desk-nav>li>a{
@@ -149,7 +151,7 @@ header{
     text-decoration: none;
     text-align: center;
     color: white;
-    padding: 40px 4px;
+    padding: 40px 6px;
   }
 
   #desk-nav>li>a:hover,
