@@ -32,7 +32,7 @@
           <h2 class="about-heading"> About us</h2>
           <p>Firefly is an event management company based out of Norwich. Our experienced and well adapted team perform a number of services for a wide range of clients.</p>
           <p>Spanning everything from inital ideasm hosting and even advertisement aspects.</p>
-          <button class="button">Read More...</button>
+          <a href="about.php" class="button">Read More...</a>
         </div>
         <div class="about-pictures">
           <img class="about-pp" src="img/about/about-one.png">
@@ -105,7 +105,7 @@
           <img class="testimony-logo" src="img/logo/partners/vfestival-logo.png" alt="V Festival Logo">
           <p class="testimony">FireFly events did a great job setting up and helping us run one of our first venues. we will definitely be useing them again.</p>
         </div>
-        <button class="button">Read More...</button>
+        <a href="testimonials.php" class="button">Read More...</a>
       </section>
 
       <section id="partners">
