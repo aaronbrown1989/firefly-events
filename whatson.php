@@ -133,7 +133,7 @@
             <div class="article-image">
               <img src="img/news/news-review.png" alt="image for the article" class="article-image">
             </div>
-            <h2>Latest Events Reviews</h2>
+            <h2 class="articleheader">Latest Events Reviews</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
             <button type="button" name="button" class="button">Read More</button>
           </div>
@@ -141,7 +141,7 @@
             <div class="article-image">
               <img src="img/news/news-details.png" alt="image for the article" class="article-image">
             </div>
-            <h2>Details About Company</h2>
+            <h2 class="articleheader">Details About Company</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
             <button type="button" name="button" class="button">Read More</button>
           </div>
@@ -149,7 +149,7 @@
             <div class="article-image">
               <img src="img/news/news-success.png" alt="image for the article" class="article-image">
             </div>
-            <h2>Events Success</h2>
+            <h2 class="articleheader">Events Success</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
             <button type="button" name="button" class="button">Read More</button>
           </div>
