@@ -81,6 +81,7 @@ p {
 /* ----- mobile menu styles ----- */
 #mobile-menu {
   background: #333d47;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, transparent 50%);
   padding: 15px 0;
   position: fixed;
   top: 0;
