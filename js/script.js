@@ -53,6 +53,32 @@ $(document).ready(function(){
     ]
   });
 
+  $('#security-carousel').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 4000
+  });
+
+  $('#catering-carousel').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 4000
+  });
+
+  $('#hosting-carousel').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 4000
+
   $('.event-carousel').slick({
     adaptiveHeight: false,
     autoplay: true,
