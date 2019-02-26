@@ -110,6 +110,12 @@ $('#burger').click(function() {
   }
 });
 
+$(window).resize(function() {
+  if ($('body').hasClass("snapjs-right") && $(window).width() >= 900) {
+    snapper.close();
+  };
+});
+
 // facebook embedded widget
 
 $(window).on('resize', function() {
