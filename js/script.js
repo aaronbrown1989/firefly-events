@@ -90,6 +90,32 @@ $(document).ready(function(){
   });
 });
 
+// mobile menu
+var snapper = new Snap({
+  element: document.getElementById('page-content')
+});
+
+snapper.settings({
+  maxPosition: 225,
+  minPosition: -225,
+  touchToDrag: false,
+  tapToClose: false
+});
+
+$('#burger').click(function() {
+  if($('body').hasClass("snapjs-right")) {
+    snapper.close();
+  } else {
+    snapper.open('right');
+  }
+});
+
+$(window).resize(function() {
+  if ($('body').hasClass("snapjs-right") && $(window).width() >= 900) {
+    snapper.close();
+  };
+});
+
 // facebook embedded widget
 
 $(window).on('resize', function() {
