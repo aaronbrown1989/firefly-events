@@ -25,9 +25,9 @@
         <div id="mob-header">
           <a class="logo-link" href="index.php"><img id="mob-logo" src="img/logo/logo-dark-small.png"/></a>
           <div id="burger">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="burger-top"></div>
+            <div class="burger-middle"></div>
+            <div class="burger-bottom"></div>
           </div>
         </div>
         <div id="desk-header">

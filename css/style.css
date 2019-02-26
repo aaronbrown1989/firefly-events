@@ -79,7 +79,6 @@ p {
 }
 
 /* ----- mobile menu styles ----- */
-
 #mobile-menu {
   background: #333d47;
   padding: 15px 0;
@@ -173,15 +172,49 @@ header{
 
 #burger {
   height: 37px;
-  width: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 49px;
+  position: relative;
 }
 
-#burger div{
+.burger-top,
+.burger-middle,
+.burger-bottom {
   height: 4px;
   background-color: #ff5400;
+  position: absolute;
+  width: 100%;
+  transition:
+    opacity 250ms ease-in-out 50ms,
+    left 250ms ease-in-out,
+    transform 350ms ease-in-out;
+}
+
+.burger-top {
+  transform-origin: top left;
+}
+
+.burger-middle {
+  top: 16px;
+  left: 0;
+}
+
+.burger-bottom {
+  bottom: 0px;
+  transform-origin: bottom left;
+}
+
+.snapjs-right .burger-top {
+  transform: rotate(45deg);
+}
+
+.snapjs-right .burger-middle {
+  left: -10%;
+  opacity: 0;
+}
+
+.snapjs-right .burger-bottom {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
 }
 
 @media (min-width: 600px){
