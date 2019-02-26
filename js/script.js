@@ -96,8 +96,8 @@ var snapper = new Snap({
 });
 
 snapper.settings({
-  maxPosition: 275,
-  minPosition: -275,
+  maxPosition: 225,
+  minPosition: -225,
   touchToDrag: false,
   tapToClose: false
 });
