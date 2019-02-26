@@ -95,6 +95,21 @@ var snapper = new Snap({
   element: document.getElementById('page-content')
 });
 
+snapper.settings({
+  maxPosition: 275,
+  minPosition: -275,
+  touchToDrag: false,
+  tapToClose: false
+});
+
+$('#burger').click(function() {
+  if($('body').hasClass("snapjs-right")) {
+    snapper.close();
+  } else {
+    snapper.open('right');
+  }
+});
+
 // facebook embedded widget
 
 $(window).on('resize', function() {
