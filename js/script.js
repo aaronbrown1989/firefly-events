@@ -78,6 +78,7 @@ $(document).ready(function(){
     swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 4000
+  });
 
   $('.event-carousel').slick({
     adaptiveHeight: false,
