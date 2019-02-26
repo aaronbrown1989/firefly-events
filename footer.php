@@ -5,7 +5,7 @@
       <p class="copyright-text">	&copy; Copyright Firefly Events 2018. All rights reserved</p>
       <ul class="order">
         <li>
-          <a href="#">
+          <a href="index.php">
             Home
           </a>
         </li>
@@ -13,7 +13,7 @@
           |
         </li>
         <li>
-          <a href="#">
+          <a href="whatson.php">
             What's on
           </a>
         </li>
@@ -21,8 +21,16 @@
           |
         </li>
         <li>
-          <a href="#">
+          <a href="about.php">
             About us
+          </a>
+        </li>
+        <li>
+          |
+        </li>
+        <li>
+          <a href="services.php">
+            Services
           </a>
         </li>
         <li>
@@ -37,7 +45,7 @@
           |
         </li>
         <li>
-          <a href="#">
+          <a href="contact.php">
             Contact us
           </a>
         </li>

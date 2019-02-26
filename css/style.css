@@ -1468,6 +1468,7 @@ p.member-title {
     box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
     border-radius: 10px;
     padding: 30px;
+  }
 }
 
 @media(min-width: 900px) {
@@ -1486,6 +1487,10 @@ p.member-title {
   #security,
   #catering {
     width: 48%;
+  }
+
+  #hosting {
+    width: 100%;
   }
 }
 
