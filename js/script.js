@@ -90,6 +90,11 @@ $(document).ready(function(){
   });
 });
 
+// mobile menu
+var snapper = new Snap({
+  element: document.getElementById('page-content')
+});
+
 // facebook embedded widget
 
 $(window).on('resize', function() {

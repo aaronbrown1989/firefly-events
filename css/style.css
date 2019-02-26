@@ -12,6 +12,14 @@ body {
   margin: 0;
 }
 
+#page-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -65,6 +73,23 @@ p {
 
   h2.section-header {
     margin: 0 0 60px;
+  }
+}
+
+/* ----- mobile menu styles ----- */
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  width: 250px;
+}
+
+@media(min-width: 900px) {
+  #mobile-menu {
+    display: none;
   }
 }
 
