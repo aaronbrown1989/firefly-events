@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
 }
 
 body {
@@ -1271,6 +1273,180 @@ p.member-title {
 
   .our-history {
     margin: 25px 0;
+  }
+}
+
+/* ----- services page styles ----- */
+
+#intro,
+#flex-container {
+  margin: 0 20px 20px;
+}
+
+#flex-container section>ul{
+  margin-top: 30px;
+}
+
+#flex-container section>ul>li:not(:last-of-type){
+  margin-bottom: 10px;
+}
+
+#intro>h2 {
+  color: #ff5400;
+}
+
+#flex-container section {
+  margin-bottom: 30px;
+}
+
+#flex-container .carousel{
+  height: 250px;
+  margin: 30px 0;
+}
+
+#flex-container .slide{
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#flex-container .slick-slide{
+  min-height: 250px;
+}
+
+#flex-container .slick-dots{
+  bottom:0;
+  background-image: linear-gradient(rgba(100, 100, 100, 0.0) 6%, rgba(100, 100, 100, 0.5) 67%, rgba(100, 100, 100, 1) 100%);
+  border-radius: 20px;
+  margin: 0;
+}
+#flex-container .slick-dots li button:before {
+  color: white;
+  font-size: 6px;
+  opacity: 0.9;
+}
+
+#flex-container .slick-dots li.slick-active button:before {
+  color:#ff5400 !important;
+  opacity: 1 !important;
+  font-size: 7px;
+}
+
+#security>h2>img,
+#catering>h2>img,
+#hosting>h2>img{
+  width:30px;
+  position:relative;
+  top:4px;
+  margin-right: 6px;
+}
+
+.fire-tower-slide{
+  background-image: url('./../img/services-page/Security/fire-tower.jpg');
+  background-position: 0% 40%;
+}
+
+.medical-slide{
+  background-image:  url('./../img/services-page/Security/medical.jpg');
+
+}
+.police-slide{
+  background-image: linear-gradient(rgba(55,55,55,0.3), rgba(0,0,0,0)), url('./../img/services-page/Security/police.jpg');
+  background-position: 0% 40%;
+  background-size: cover;
+}
+.search-slide{
+  background-image:  url('./../img/services-page/Security/search.jpg');
+  background-position: center;
+  background-size: 167%;
+}
+
+.festival-bar-slide{
+  background-image: url('./../img/services-page/Catering/Festival-Bar.jpg');
+}
+
+.general-store-slide{
+  background-image: url('./../img/services-page/Catering/general-store.jpg');
+  background-position: 44%;
+}
+
+.vege-slide{
+  background-image: linear-gradient(rgba(55,55,55,0.2), rgba(0,0,0,0) 30%), url('./../img/services-page/Catering/Vege.jpg');
+  background-position: 18%;
+}
+
+.car-park-slide{
+  background-image: linear-gradient(rgba(55,55,55,0.3), rgba(0,0,0,0)), url('./../img/services-page/Hosting/car-park.jpg');
+  background-position: center;
+
+}
+
+.litter-picker-slide{
+  background-image: url('./../img/services-page/Hosting/litter-picker.jpg');
+  background-position: center;
+
+}
+
+.stage-slide{
+  background-image: url('./../img/services-page/Hosting/stage.jpg');
+  background-position: 40% 0%;
+}
+
+@media(min-width: 600px) {
+  #intro {
+    margin: 0 50px 20px;
+  }
+
+  #flex-container {
+    margin: 0 50px 20px;
+  }
+
+  #flex-container section:not(#intro){
+    box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+@media(min-width: 900px) {
+  #flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #flex-container section:not(#intro){
+    box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
+    border-radius: 10px;
+    padding: 35px 50px 50px;
+  }
+
+  #security,
+  #catering {
+    width: 48%;
+  }
+}
+
+@media(min-width: 1200px) {
+  #flex-container {
+    margin: 0;
+  }
+
+  #security,
+  #catering,
+  #hosting {
+    width: 32%;
+  }
+
+  #intro {
+    margin: 0 0 20px;
+  }
+
+  #flex-container section:not(#intro){
+    box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
+    border-radius: 10px;
+    padding: 20px 30px 30px;
   }
 }
 
