@@ -74,6 +74,10 @@ header{
   background-color: #333d47;
 }
 
+.home-link {
+  align-self: center;
+}
+
 #desk-header{
   display: none;
 }
