@@ -1582,9 +1582,18 @@ footer li {
   }
 }
 /*code for the news articls layout*/
+.news-article-container {
+  display: flex;
+}
+.min-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
 .newsArticle {
   display: flex;
   flex-direction: column;
+  width: 70%
 }
 .head{
   align-self: center;
@@ -1599,4 +1608,51 @@ footer li {
 .font{
   padding-left: 20px;
   padding-right: 20px;
+}
+.side-article{
+  border: 1px solid black;
+  width: 90%;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  /* height: 30%; */
+  display: flex;
+  flex-direction: column;
+}
+.img-size {
+  width: 100%;
+  height: 70%;
+}
+.info {
+  background-color: #ff5400;
+  width: 100px;
+  align-self: flex-end;
+  margin-right: 20px;
+  cursor: pointer;
+  padding-left: 3px;
+}
+.info-side,
+.info-side-dif {
+  align-self: flex-end;
+  cursor: pointer;
+  padding-left: 3px;
+  padding-right: 3px;
+  position: absolute;
+}
+.info-side{
+background-color: #ff5400;
+color: white;
+}
+.info-side-dif{
+background-color: #22588e;
+color: white;
+}
+.foo {
+  margin: 12px;
+}
+.bun{
+  align-self: flex-end;
+    cursor: pointer;
+}
+.back-button{
+  
 }
