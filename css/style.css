@@ -1673,17 +1673,41 @@ color: white;
   left: 30px;
 }
 .img-user {
-  position: relative;
-  top: 15px;
-  padding-left: 20px;
+  margin-bottom: 5px;
 }
 .img-date {
-  position: relative;
-  top: 30px;
-  left: -108px;
+  margin-top: 5px; 
 }
-.fa-lg {
+.fa-2x {
   color: #5864f4;
   cursor: pointer;
   margin: 0;
+}
+
+/* media quearys */
+@media screen and (max-width: 640px) {
+  .news-article-container {
+    flex-direction: column;
+  }
+  .side-article{
+    align-self: center;
+  }
+}
+@media (max-width: 530px ) {
+  .profile-pic{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 15px;
+  }
+}
+@media (max-width: 380px) {
+  .back-button{
+    bottom: 15px;
+  }
+  .date_and_who_update{
+    left: 0;
+  }
+}
+@media (max-width: 320px) {
 }
