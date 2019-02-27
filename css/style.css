@@ -1588,12 +1588,12 @@ footer li {
 .min-container {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 100%;
 }
 .newsArticle {
   display: flex;
   flex-direction: column;
-  width: 70%
+  width: 100%
 }
 .head{
   align-self: center;
@@ -1614,7 +1614,6 @@ footer li {
   width: 90%;
   margin-bottom: 5px;
   margin-top: 20px;
-  /* height: 30%; */
   display: flex;
   flex-direction: column;
 }
@@ -1622,10 +1621,12 @@ footer li {
   width: 100%;
   height: 70%;
 }
+.box{
+  align-self: flex-end;
+}
 .info {
   background-color: #ff5400;
   width: 100px;
-  align-self: flex-end;
   margin-right: 20px;
   cursor: pointer;
   padding-left: 3px;
@@ -1651,8 +1652,38 @@ color: white;
 }
 .bun{
   align-self: flex-end;
-    cursor: pointer;
+  cursor: pointer;
+
 }
 .back-button{
-  
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+  bottom: 40px;
+}
+.profile-pic{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.date_and_who_update{
+  display: inline-flex;
+  position: relative;
+  left: 30px;
+}
+.img-user {
+  position: relative;
+  top: 15px;
+  padding-left: 20px;
+}
+.img-date {
+  position: relative;
+  top: 30px;
+  left: -108px;
+}
+.fa-lg {
+  color: #5864f4;
+  cursor: pointer;
+  margin: 0;
 }
