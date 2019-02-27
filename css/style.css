@@ -1581,3 +1581,12 @@ footer li {
     align-self: center;
   }
 }
+/*code for the news articls layout*/
+/*this is the header this was only added so that i could see the rought layout*/
+.top {
+  border: 1px solid black;
+  color: red;
+  background-color: pink;
+  width: 100%;
+  height: 100%
+}
