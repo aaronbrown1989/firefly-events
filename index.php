@@ -66,7 +66,7 @@
             <p class="news-text">
               Last week our team took part in a join project with one of our clients 'Helm' which involved creating a new hosting system that could possibly be adopted by countless other festival service providers
             </p>
-            <button class="button">Read More...</button>
+            <a href="article.php" class="button">Read More...</a>
           </div>
           <div class="mobile-break">
             <hr>
@@ -78,7 +78,7 @@
             <p class="news-text">
               Last week our team took part in a join project with one of our clients 'Helm' which involved creating a new hosting system that could possibly be adopted by countless other festival service providers
             </p>
-            <button class="button">Read More...</button>
+            <a href="article.php" class="button">Read More...</a>
           </div>
           <div class="news-3 news-card">
             <h3 class="news-header">
@@ -87,7 +87,7 @@
             <p class="news-text">
               Last week our team took part in a join project with one of our clients 'Helm' which involved creating a new hosting system that could possibly be adopted by countless other festival service providers
             </p>
-            <button class="button">Read More...</button>
+            <a href="article.php" class="button">Read More...</a>
           </div>
         </div>
       </section>
