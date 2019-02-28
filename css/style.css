@@ -12,6 +12,16 @@ body {
   margin: 0;
 }
 
+#page-content {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -79,6 +89,7 @@ p {
   bottom: 0;
   left: auto;
   width: 225px;
+  z-index: -999;
 }
 
 #mobile-menu ul {
