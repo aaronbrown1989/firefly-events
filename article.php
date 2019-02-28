@@ -6,6 +6,11 @@
       <div class="head">
         <h1>Article Title</h1>
       </div>
+      <div class="feature-image-wrapper">
+        <div class="article-feature-image">
+          <img src="img/news/news-company.png">
+        </div>
+      </div>
       <div class="box">
         <div class="article-flag news-flag">
           News
