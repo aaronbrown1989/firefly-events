@@ -1,5 +1,5 @@
 <?php include 'header.php';?>
-
+<main>
   <div class="news-article-container">
     <!-- this is the main news article  -->
     <div class="article-column">
@@ -7,11 +7,11 @@
         <h1>Article Title</h1>
       </div>
       <div class="box">
-        <i class="fab fa-facebook fa-2x"></i>
-        <i class="fab fa-twitter-square fa-2x"></i>
         <div class="article-flag news-flag">
           News
         </div>
+        <i class="fab fa-facebook fa-2x"></i>
+        <i class="fab fa-twitter-square fa-2x"></i>
       </div>
       <div class="article-body">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat arcu vitae sapien suscipit, vitae cursus ipsum ultrices. Vestibulum in congue nibh, egestas aliquet augue. Curabitur viverra consequat metus a faucibus. Morbi dignissim vitae lectus eget euismod. Vestibulum nec hendrerit purus. Vestibulum libero purus, rutrum quis accumsan eu, condimentum in urna. Morbi et ultricies orci. In hac habitasse platea dictumst. Etiam velit justo, maximus ut vehicula fringilla, laoreet ac orci. Nulla facilisi. Aliquam erat volutpat.</p>
@@ -67,5 +67,5 @@
     </div>
     <!--  -->
   </div>
-
+</main>
 <?php include 'footer.php';?>
