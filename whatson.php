@@ -127,7 +127,7 @@
             </div>
             <h2 class="articleheader">How's the Company Doing?</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
-            <button type="button" name="button" class="button">Read More</button>
+            <a href="article.php" class="button">Read More</a>
           </div>
           <div class="article">
             <div class="article-image">
@@ -135,7 +135,7 @@
             </div>
             <h2 class="articleheader">Latest Events Reviews</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
-            <button type="button" name="button" class="button">Read More</button>
+            <a href="article.php" class="button">Read More</a>
           </div>
           <div class="article">
             <div class="article-image">
@@ -143,7 +143,7 @@
             </div>
             <h2 class="articleheader">Details About Company</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
-            <button type="button" name="button" class="button">Read More</button>
+            <a href="article.php" class="button">Read More</a>
           </div>
           <div class="article">
             <div class="article-image">
@@ -151,7 +151,7 @@
             </div>
             <h2 class="articleheader">Events Success</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
-            <button type="button" name="button" class="button">Read More</button>
+            <a href="article.php" class="button">Read More</a>
           </div>
         </div>
       </div>
