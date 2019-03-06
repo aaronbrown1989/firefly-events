@@ -2402,3 +2402,27 @@ div > table > tbody > tr > td:hover{
     margin-left: 20px;
   }
 }
+
+/*-- Case Studies page --*/
+
+.case-container {
+  max-width: 70%;
+  display: flex;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.case-headcontainer {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+.case-studycontainer {
+  width: 32%;
+  margin:20px auto;
+}
+
+.case-studyheader {
+  text-align: center;
+}
