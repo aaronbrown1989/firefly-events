@@ -2402,3 +2402,77 @@ div > table > tbody > tr > td:hover{
     margin-left: 20px;
   }
 }
+
+/*-- Case Studies page --*/
+
+.case-main-info {
+  padding: 0 20px;
+}
+
+.casestudies-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+
+.case-studycontainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0 40px;
+}
+
+.case-studytext {
+  padding: 0px 7px;
+  margin-bottom: 20px;
+}
+
+.case-img {
+  width: 100%;
+  height: auto;
+}
+
+.case-button{
+  margin: 10px
+}
+
+@media (min-width:600px) {
+  .case-main-info {
+    padding: 0 50px;
+  }
+
+  .casestudies-container {
+    margin: 0 50px;
+  }
+}
+
+@media (min-width:900px) {
+  .case-studycontainer {
+    width: 49%;
+  }
+
+  .case-studycontainer .button{
+    margin-top: auto;
+  }
+}
+
+@media (min-width:1200px) {
+  .case-main-info {
+    padding: 0;
+  }
+
+  .casestudies-container {
+    margin: 0;
+  }
+
+  .case-studycontainer {
+    width: 32%;
+  }
+
+  .case-img {
+    height: auto;
+    width: 100%;
+  }
+}
