@@ -29,7 +29,7 @@
     <main>
       <section class="about-background-image"  id="about">
         <div class="about-content ">
-          <h2 class="about-heading"> About us</h2>
+          <h2 class="about-heading"> About Us</h2>
           <p>Firefly is an event management company based out of Norwich. Our experienced and well adapted team perform a number of services for a wide range of clients.</p>
           <p>Spanning everything from inital ideasm hosting and even advertisement aspects.</p>
           <a href="about.php" class="button">Read More...</a>
