@@ -209,3 +209,45 @@ function showCalendar(month, year) {
       tbl.appendChild(row); // appending each row into calendar body.
   }
 }
+
+// setting the characters limit to the message form on contact us page.
+function limitText(limitField, limitCount, limitNum) {
+	if (limitField.value.length > limitNum) {
+		limitField.value = limitField.value.substring(0, limitNum);
+	} else {
+		limitCount.value = limitNum - limitField.value.length;
+	}
+}
+
+// valadation for form
+function formvaladation() {
+  const empt = document.getElementById("contact-name").value;
+  if (empt === "")  {
+    alert("Please input a Name");
+    event.preventDefault();
+  }
+}
+
+ function checkEmail() {
+  var email = document.getElementById('contact-email');
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if (!filter.test(email.value)) {
+    alert('Please provide a valid email address');
+    email.focus;
+    event.preventDefault();
+  
+ }
+}
+function messvaladation() {
+  const empt = document.getElementById("contact-message").value;
+  if (empt === "")  {
+    alert("Please leave feedback for what you would need us for.");
+    event.preventDefault();
+  }
+}
+
+function FormValidation() {
+  formvaladation();
+  checkEmail();
+  messvaladation();
+}
