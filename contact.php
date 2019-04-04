@@ -1,14 +1,25 @@
 <?php include 'header.php';?>
   <main>
+  <div id="dialogOverlay"></div>
+  <div id="dialogBox">
+    <div>
+      <div id="dialogBoxHead"></div>
+      <div id="dialogBoxBody"></div>
+      <div id="dialogBoxFoot"></div>
+    </div>
+  </div>
     <h1>Contact Us</h1>
     <p class="tagline">If you want to hire us for your event or just touch base, fill in the form below or give us a call!</p>
     <form id="contact-form" onsubmit="FormValidation()" name="contact-form">
       <label for="contact-name">Name <strong class="large-req"> *</strong></label>
       <input type="text" name="name" id="contact-name" />
+      <p id="Error"></p>
       <label for="contact-email">Email<strong class="large-req"> *</strong></label>
       <input type="text" name="email" id="contact-email" />
+      <p id="Error2"></p>
       <label for="contact-message">Message<strong class="large-req"> *</strong></label>
       <textarea name="message" id="contact-message" style="max-width: 39.4rem;" maxlength="500"></textarea>
+      <p id="Error3"></p>
       <button class="button" type="submit">Send</button>
     </form>
 
