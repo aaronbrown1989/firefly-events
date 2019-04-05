@@ -865,7 +865,7 @@ main {
   }
 
   .services-img:nth-of-type(2){
-    margin: 30px 0;
+    margin: 0 0;
   }
 }
 
@@ -1009,14 +1009,19 @@ main {
     margin-bottom: 70px;
   }
 
+  #services > h2,
+  #latest-news > h2 {
+    padding: 30px 0;
+  }
+
   .services-img{
-    width: 320px;
-    height: 320px;
+    width: 350px;
+    height: 350px;
     padding:0;
   }
 
   #services-security{
-    margin: 0 -140px;
+    margin: 0 -50px;
   }
 
   #services-security-text::after,
