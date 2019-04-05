@@ -48,6 +48,11 @@ p {
   font-size: 16px;
   padding: 5px 10px;
   text-decoration: none;
+  transition-duration: .25s;
+}
+
+.button:hover {
+  background-color: #a53600;
 }
 
 @media (min-width: 600px) {
