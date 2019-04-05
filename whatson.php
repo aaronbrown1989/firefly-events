@@ -3,7 +3,7 @@
     <h1>Whats On</h1>
 
     <!--carousel  -->
-    <div class="event-carousel">
+    <div class="event-carousel dark">
       <div class="event-slide fix1">
         <h3 class="event-title">Event Name</h3>
         <p class="event-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a arcu vel nulla cursus cursus venenatis a leo. Nunc lobortis tortor odio, nec condimentum dui scelerisque vestibulum. Mauris quis tellus mi. Sed fringilla mauris nibh, a suscipit ante vestibulum sed. Nam viverra fringilla commodo. Donec eget mi tempus, aliquam odio id, lobortis dolor. Aliquam erat volutpat. Cras egestas quam ex, et viverra lectus tincidunt quis. Nunc at ligula non lectus iaculis luctus. Aenean placerat justo dignissim tortor pellentesque faucibus. Proin pellentesque mauris mi, a tristique lectus maximus sit amet. Praesent pellentesque maximus turpis, quis elementum lorem maximus a. Nullam sit amet vulputate tortor. Cras a egestas sem. Sed aliquet non nibh in commodo. Sed porta magna eu nunc viverra, vestibulum ornare lorem dapibus.</p>

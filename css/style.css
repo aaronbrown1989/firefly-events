@@ -353,6 +353,7 @@ header{
   background-size: cover;
   height: 200px;
   position: relative;
+  outline: none;
 }
 
 .slide-one {
@@ -447,6 +448,11 @@ h2.carousel-header {
   text-align: center;
   opacity: .65;
   color: #fff;
+}
+
+.dark .slick-dots li button::before
+{
+  color: black;
 }
 
 .slick-dots li.slick-active button::before
@@ -2184,6 +2190,7 @@ footer li {
   background-repeat: no-repeat;
   text-align: center;
   padding: 20px 20px 40px;
+  outline: none;
 }
 
 .fix1{
@@ -2269,6 +2276,7 @@ h3.event-title {
   margin: 0;
   padding: 20px 0;
   text-align: left;
+  font-weight: bold;
 }
 
 .event-carousel .button {
