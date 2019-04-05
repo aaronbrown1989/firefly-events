@@ -13,6 +13,29 @@
         </p>
       </section>
       <div id="flex-container">
+        <section id="hosting">
+          <h2><img src="./img/services-page/Hosting/tent.svg" />Hosting</h2>
+          <div id="hosting-carousel" class="carousel">
+            <div class="car-park-slide slide"></div>
+            <div class="litter-picker-slide slide"></div>
+            <div class="stage-slide slide"></div>
+          </div>
+          <p>
+            We have several different sites of differing size across the country. This allows you to pick one that matches
+            the scale of your festival, and ensures you have your festival at a location of your choosing. We understand
+            the complexity of organising an event like this, and have endeavoured to provide you with the facilities to put
+            your mind at ease.
+          </p>
+          <ul>
+            <li>Multiple sites to choose from.</li>
+            <li>We can provide stages and speakers, and the means to deliver and set them up.</li>
+            <li>Information staff and kiosks</li>
+            <li>Volunteer litter picking and recycling facilities </li>
+            <li>Portaloos and waste management</li>
+            <li>Assigned space for car parking on-site</li>
+            <li>Admin staff</li>
+          </ul>
+        </section>
         <section id="security">
           <h2><img src="./img/services-page/Security/lock (1).svg" />Security</h2>
           <div id="security-carousel" class="carousel">
@@ -59,29 +82,6 @@
             ponchos, smoking paraphernalia and band/festival merchandise. Please contact us for further details, or if
             there is something else you'd like to dispense at your festival.
           </p>
-        </section>
-        <section id="hosting">
-          <h2><img src="./img/services-page/Hosting/tent.svg" />Hosting</h2>
-          <div id="hosting-carousel" class="carousel">
-            <div class="car-park-slide slide"></div>
-            <div class="litter-picker-slide slide"></div>
-            <div class="stage-slide slide"></div>
-          </div>
-          <p>
-            We have several different sites of differing size across the country. This allows you to pick one that matches
-            the scale of your festival, and ensures you have your festival at a location of your choosing. We understand
-            the complexity of organising an event like this, and have endeavoured to provide you with the facilities to put
-            your mind at ease.
-          </p>
-          <ul>
-            <li>Multiple sites to choose from.</li>
-            <li>We can provide stages and speakers, and the means to deliver and set them up.</li>
-            <li>Information staff and kiosks</li>
-            <li>Volunteer litter picking and recycling facilities </li>
-            <li>Portaloos and waste management</li>
-            <li>Assigned space for car parking on-site</li>
-            <li>Admin staff</li>
-          </ul>
         </section>
       </div>
   </main>
