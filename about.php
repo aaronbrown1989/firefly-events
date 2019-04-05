@@ -13,7 +13,7 @@
 
     <div class="team-members">
       <div class="about-card">
-        <img class="about-card-img" src="img/about/about-one.png">
+        <img class="about-card-img" src="img/about/about-one.png" alt="Team member">
         <div>
           <h3 class="member-name">Name</h3>
           <p class="member-title">Job Title</p>
@@ -21,7 +21,7 @@
       </div>
 
       <div class="about-card">
-        <img class="about-card-img" src="img/about/about-two.png">
+        <img class="about-card-img" src="img/about/about-two.png" alt="Team member">
         <div>
           <h3 class="member-name">Name</h3>
           <p class="member-title">Job Title</p>
@@ -29,7 +29,7 @@
       </div>
 
       <div class="about-card">
-        <img class="about-card-img" src="img/about/about-three.png">
+        <img class="about-card-img" src="img/about/about-three.png" alt="Team member">
         <div>
           <h3 class="member-name">Name</h3>
           <p class="member-title">Job Title</p>
@@ -40,7 +40,7 @@
 
   <section class="our-history">
     <div>
-      <h2 class="section-header">Our History</h2>
+      <h2 class="section-header history">Our History</h2>
       <p>Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Aenean sed egestas est, at euismod augue. Fusce vel
         sem accumsan, facilisis est varius, accumsan leo. Integer malesuada

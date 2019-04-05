@@ -35,9 +35,9 @@
           <a href="about.php" class="button">Read More...</a>
         </div>
         <div class="about-pictures">
-          <img class="about-pp" src="img/about/about-one.png">
-          <img class="about-pp" src="img/about/about-two.png">
-          <img class="about-pp about-pp-last" src="img/about/about-three.png">
+          <img class="about-pp" src="img/about/about-one.png" alt="Team member">
+          <img class="about-pp" src="img/about/about-two.png" alt="Team member">
+          <img class="about-pp about-pp-last" src="img/about/about-three.png" alt="Team member">
         </div>
       </section>
 
