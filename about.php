@@ -1,8 +1,9 @@
 <?php include 'header.php';?>
 <main>
+  <h1>About Us</h1>
   <section class="about-background-image"  id="about-page">
     <div>
-      <h2 class="about-heading">About us</h2>
+      <!-- <h2 class="about-heading">About us</h2> -->
       <p>Firefly is an event management company based out of Norwich. Our experienced and well adapted team perform a number of services for a wide range of clients.</p>
       <p>Spanning everything from inital ideasm hosting and even advertisement aspects.</p>
     </div>

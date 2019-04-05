@@ -627,12 +627,6 @@ main {
   margin: 10px 0 0;
 }
 
-.about-heading{
-  font-size: 24px;
-  margin: 0 0 20px;
-  font-weight: 400;
-}
-
 .about-background-image{
   background-image: url("https://raw.githubusercontent.com/hoytcodes/firefly-events/master/img/logo/logo-transparent.png");
   background-repeat: no-repeat;
