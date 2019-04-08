@@ -2074,7 +2074,19 @@ footer li {
   margin-top: 5px;
 }
 
+.article-button {
+  position: relative;
+  left: 65%;
+}
+
+
 /* media queries */
+@media (max-width: 600px) {
+  .article-button {
+    position: relative;
+    left: 25%;
+  }
+}
 
 @media (min-width: 600px) {
   .profile-pic{
@@ -2111,6 +2123,11 @@ footer li {
   .article-body {
     padding: 0 50px;
   }
+
+  .article-button {
+    position: relative;
+    left: 45%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -2123,6 +2140,11 @@ footer li {
   .article-feature-image {
     border-radius: 10px;
     padding-bottom: 40%;
+  }
+
+  .article-button {
+    position: relative;
+    left: 65%;
   }
 }
 
