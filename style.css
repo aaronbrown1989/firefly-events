@@ -36,10 +36,6 @@ h2.section-header {
   margin: 0 0 25px;
 }
 
-h2.section-header.history {
-  margin: 0 0 15px;
-}
-
 p {
   line-height: 1.5;
 }
@@ -52,11 +48,6 @@ p {
   font-size: 16px;
   padding: 5px 10px;
   text-decoration: none;
-  transition-duration: .25s;
-}
-
-.button:hover {
-  background-color: #a53600;
 }
 
 @media (min-width: 600px) {
@@ -358,7 +349,6 @@ header{
   background-size: cover;
   height: 200px;
   position: relative;
-  outline: none;
 }
 
 .slide-one {
@@ -453,11 +443,6 @@ h2.carousel-header {
   text-align: center;
   opacity: .65;
   color: #fff;
-}
-
-.dark .slick-dots li button::before
-{
-  color: black;
 }
 
 .slick-dots li.slick-active button::before
@@ -625,7 +610,7 @@ main {
   font-family: 'Raleway', sans-serif;
   background-color: #333d47;
   padding: 20px;
-  margin: 0 0 20px;
+  margin: 0 0 70px;
 }
 
 #about p,
@@ -635,6 +620,12 @@ main {
 
 #about .button {
   margin: 10px 0 0;
+}
+
+.about-heading{
+  font-size: 24px;
+  margin: 0 0 20px;
+  font-weight: 400;
 }
 
 .about-background-image{
@@ -654,7 +645,7 @@ main {
   #about,
   #about-page {
     border-radius: 10px;
-    margin: 25px 25px 30px;
+    margin: 25px 25px 70px;
     justify-content: space-between;
   }
 
@@ -875,7 +866,7 @@ main {
   }
 
   .services-img:nth-of-type(2){
-    margin: 0 0;
+    margin: 30px 0;
   }
 }
 
@@ -1019,19 +1010,14 @@ main {
     margin-bottom: 70px;
   }
 
-  #services > h2,
-  #latest-news > h2 {
-    padding: 30px 0;
-  }
-
   .services-img{
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     padding:0;
   }
 
   #services-security{
-    margin: 0 -50px;
+    margin: 0 -140px;
   }
 
   #services-security-text::after,
@@ -1106,7 +1092,6 @@ main {
 
   .latest-news-container {
     display: flex;
-    flex-wrap: wrap;
     margin: 25px 25px 70px;
     justify-content: space-between;
   }
@@ -1122,7 +1107,7 @@ main {
 
   .news-card {
     margin: 16px;
-    width: 44%;
+    width: 33%;
     border-radius: 10px;
     padding: 10px 15px 20px;
   }
@@ -1130,20 +1115,16 @@ main {
   .mobile-break {
     display: none;
   }
-}
-
-@media (min-width: 900px) {
-  .latest-news-container {
-    flex-wrap: nowrap;
-  }
-
-  .news-card {
-    padding: 20px;
-    width: 33%;
-  }
 
   .news-card:last-child {
     display: block;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .news-card {
+    padding: 20px;
   }
 }
 
@@ -1172,7 +1153,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 25px;
-  padding: 12px 20px;
+  padding: 20px;
 }
 
 .testimony-logo {
@@ -1206,13 +1187,11 @@ main {
 
 #testimonials .button {
   align-self: flex-end;
-  margin-top: auto;
 }
 
 @media (min-width: 600px) {
   #testimonials {
     margin: 0 25px;
-    min-height: 400px;
   }
 
   .testimony-container {
@@ -1222,7 +1201,7 @@ main {
   }
 
   .testimony-logo {
-    width: 15%;
+    width: 20%;
     max-width: 150px;
     padding: 0 20px 0 0;
     margin: 0;
@@ -1414,7 +1393,7 @@ p.member-title {
     color: white;
     background-color: #333d47;
     padding: 20px;
-    margin-bottom: 0px;
+    margin-bottom: -20px;
 }
 
 @media (min-width: 600px) {
@@ -1725,7 +1704,7 @@ p.member-title {
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
   padding: 10px;
-  margin: 0 0 20px;
+  /* margin: 0 0 20px; */
   border: none;
   border-radius: 5px;
   -moz-box-shadow: 0 7px 30px rgba(51, 61, 71, 0.6);
@@ -1784,6 +1763,52 @@ p.member-title {
 
 .large-req{
   font-size: 2rem;
+}
+/* dialog box styles */
+#dialogOverlay{
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  width: 100%;
+  z-index: 10;
+}
+#dialogBox{
+  display: none;
+  position: fixed;
+  background: #000;
+  border-radius: 7px;
+  width: 550px;
+  z-index: 10;
+}
+#dialogBox > div{
+  background: #fff; 
+  margin: 8px;
+}
+#dialogBox > div > #dialogBoxHead{
+  background: #666;
+  font-size: 19px;
+  padding: 10px;
+  color: #ccc;
+}
+#dialogBox > div > #dialogBoxBody {
+  background: #333;
+  padding: 20px;
+  color: #fff;
+}
+#dialogBox > div > #dialogBoxFoot{
+  background: #666;
+  padding:10px;
+  text-align:right;
+}
+
+.notValed{
+  margin: none;
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 @media (min-width: 600px) {
@@ -2203,7 +2228,6 @@ footer li {
   background-repeat: no-repeat;
   text-align: center;
   padding: 20px 20px 40px;
-  outline: none;
 }
 
 .fix1{
@@ -2289,7 +2313,6 @@ h3.event-title {
   margin: 0;
   padding: 20px 0;
   text-align: left;
-  font-weight: bold;
 }
 
 .event-carousel .button {

@@ -223,8 +223,8 @@ function limitText(limitField, limitCount, limitNum) {
 function formvaladation() {
   const empt = document.getElementById("contact-name").value;
   if (empt === "")  {
-    alert("Please input a Name");
     event.preventDefault();
+    document.getElementById("Error").innerHTML = "<p class='notValed'>Please add your Company name.</p>" 
   }
 }
 
@@ -232,17 +232,16 @@ function formvaladation() {
   var email = document.getElementById('contact-email');
   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   if (!filter.test(email.value)) {
-    alert('Please provide a valid email address');
     email.focus;
     event.preventDefault();
-  
+    document.getElementById("Error2").innerHTML = "<p class='notValed'>Please add a valid Email</p>" 
  }
 }
 function messvaladation() {
   const empt = document.getElementById("contact-message").value;
   if (empt === "")  {
-    alert("Please leave feedback for what you would need us for.");
     event.preventDefault();
+    document.getElementById("Error3").innerHTML = "<p class='notValed'>Please leave feedback for what you would need us for.</p>";
   }
 }
 
