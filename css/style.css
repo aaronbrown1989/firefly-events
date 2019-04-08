@@ -52,6 +52,11 @@ p {
   font-size: 16px;
   padding: 5px 10px;
   text-decoration: none;
+  transition-duration: .25s;
+}
+
+.button:hover {
+  background-color: #a53600;
 }
 
 @media (min-width: 600px) {
@@ -632,12 +637,6 @@ main {
   margin: 10px 0 0;
 }
 
-.about-heading{
-  font-size: 24px;
-  margin: 0 0 20px;
-  font-weight: 400;
-}
-
 .about-background-image{
   background-image: url("https://raw.githubusercontent.com/hoytcodes/firefly-events/master/img/logo/logo-transparent.png");
   background-repeat: no-repeat;
@@ -876,7 +875,7 @@ main {
   }
 
   .services-img:nth-of-type(2){
-    margin: 30px 0;
+    margin: 0 0;
   }
 }
 
@@ -1020,14 +1019,19 @@ main {
     margin-bottom: 70px;
   }
 
+  #services > h2,
+  #latest-news > h2 {
+    padding: 30px 0;
+  }
+
   .services-img{
-    width: 320px;
-    height: 320px;
+    width: 350px;
+    height: 350px;
     padding:0;
   }
 
   #services-security{
-    margin: 0 -140px;
+    margin: 0 -50px;
   }
 
   #services-security-text::after,
