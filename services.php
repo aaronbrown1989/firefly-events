@@ -14,7 +14,7 @@
       </section>
       <div id="flex-container">
         <section id="hosting">
-          <h2><img src="./img/services-page/Hosting/tent.svg" />Hosting</h2>
+          <h2><img src="./../img/services/cloud.svg" />Hosting</h2>
           <div id="hosting-carousel" class="carousel">
             <div class="car-park-slide slide"></div>
             <div class="litter-picker-slide slide"></div>
@@ -37,7 +37,7 @@
           </ul>
         </section>
         <section id="security">
-          <h2><img src="./img/services-page/Security/lock (1).svg" />Security</h2>
+          <h2><img src="./img/services/locked.svg" />Security</h2>
           <div id="security-carousel" class="carousel">
             <div class="fire-tower-slide slide"></div>
             <div class="medical-slide slide"></div>
@@ -62,7 +62,7 @@
           </ul>
         </section>
         <section id="catering">
-          <h2><img src="./img/services-page/Catering/drink-beer-jar.svg" />Catering</h2>
+          <h2><img src="./img/services/food-drink.svg" />Catering</h2>
             <div id="catering-carousel" class="carousel">
               <div class="festival-bar-slide slide"></div>
               <div class="general-store-slide slide"></div>

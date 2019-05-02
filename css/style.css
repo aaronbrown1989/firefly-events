@@ -1533,11 +1533,12 @@ p.member-title {
 
 #security>h2>img,
 #catering>h2>img,
-#hosting>h2>img{
+#hosting>h2>img {
   width:30px;
   position:relative;
   top:4px;
   margin-right: 6px;
+  filter: invert(74%) sepia(100%) saturate(1952%) hue-rotate(374deg) brightness(100%) contrast(100%);
 }
 
 .fire-tower-slide{
@@ -2099,7 +2100,19 @@ footer li {
   margin-top: 5px;
 }
 
-/* media quearys */
+.article-button {
+  position: relative;
+  left: 65%;
+}
+
+
+/* media queries */
+@media (max-width: 600px) {
+  .article-button {
+    position: relative;
+    left: 25%;
+  }
+}
 
 @media (min-width: 600px) {
   .profile-pic{
@@ -2136,6 +2149,11 @@ footer li {
   .article-body {
     padding: 0 50px;
   }
+
+  .article-button {
+    position: relative;
+    left: 45%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -2148,6 +2166,11 @@ footer li {
   .article-feature-image {
     border-radius: 10px;
     padding-bottom: 40%;
+  }
+
+  .article-button {
+    position: relative;
+    left: 65%;
   }
 }
 

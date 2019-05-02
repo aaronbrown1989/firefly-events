@@ -32,8 +32,9 @@
             <span class="author">Posted by Mic</span>
             <span class="article-date">18th December 2018</span>
           </div>
+          <a href="whatson.php" class="button article-button">Back</a>
         </div>
-        <a href="whatson.php" class="button">Back</a>
+
       </div>
     </div>
     <!---->
