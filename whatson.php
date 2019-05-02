@@ -112,8 +112,6 @@
             </select>
           </form>
         </div>
-
-        <p class="muted">Click a day to find out if there's an event on.</p>
       </div>
 
 
