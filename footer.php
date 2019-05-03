@@ -2,7 +2,10 @@
     <div class="container-outer">
       <img class="logo-white-small" src="img/logo/logo-light-small.png" alt="This is the FireFly logo">
       <div class="container-inner">
+      <div class="FootLine">
         <p class="copyright-text">	&copy; Copyright Firefly Events 2018. All rights reserved</p>
+      </div>
+      <div class="FootLine">
         <ul class="order">
           <li>
             <a href="index.php">
@@ -50,10 +53,10 @@
             </a>
           </li>
         </ul>
+        </div>
       </div>
     </div>
   </footer>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>

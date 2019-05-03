@@ -1,5 +1,4 @@
 /* ----- global styles ----- */
-
 * {
   box-sizing: border-box;
 }
@@ -88,6 +87,7 @@ p {
 }
 
 /* ----- mobile menu styles ----- */
+
 #mobile-menu {
   background: #333d47;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, transparent 50%);
@@ -156,6 +156,7 @@ p {
 }
 
 /* ----- header styles ----- */
+
 
 header{
   background-color: #333d47;
@@ -347,6 +348,7 @@ header{
 }
 
 /* ----- image carousel styles ----- */
+
 
 #image-carousel {
   position: relative;
@@ -617,6 +619,7 @@ main {
 }
 
 /* ----- about styles ----- */
+
 #about,
 #about-page {
   order: 1;
@@ -649,6 +652,7 @@ main {
 }
 
 /* about media queries --------------- */
+
 @media only screen and (min-width: 600px){
 
   #about,
@@ -756,6 +760,7 @@ main {
 }
 
 /* ----- services styles ----- */
+
 #services {
   order: 2;
   padding: 0 35px;
@@ -763,6 +768,7 @@ main {
 }
 
 /*--Image cards--*/
+
 #services-img-container{
   display: flex;
   flex-direction: column;
@@ -798,6 +804,7 @@ main {
 }
 
 /*--Image card icons--*/
+
 #services-security-text::after,
 #services-catering-text::after,
 #services-hosting-text::after{
@@ -826,6 +833,7 @@ main {
   left: 25px;
 }
 /*--Card overlay--*/
+
 .services-overlay-text{
   position: relative;
   margin: 0 auto;
@@ -917,6 +925,7 @@ main {
     overflow: hidden;
   }
   /*- order changes -*/
+  
   #services-security{
     order:2;
     z-index: 2;
@@ -926,6 +935,7 @@ main {
   }
 
   /*--Background image--*/
+  
   #services-security::before,
   #services-hosting::before,
   #services-catering::before{
@@ -954,6 +964,7 @@ main {
   }
 
   /*--Overlay icons--*/
+  
   #services-security-text::after,
   #services-catering-text::after,
   #services-hosting-text::after{
@@ -970,6 +981,7 @@ main {
   }
 
   /*--Overlay text--*/
+  
   .services-overlay-text{
     transform: rotate(-45deg);
     position: absolute;
@@ -982,6 +994,7 @@ main {
 
 @media (min-width: 900px){
   /*--Overlay icons--*/
+  
   #services-security-text::after,
   #services-catering-text::after,
   #services-hosting-text::after{
@@ -998,6 +1011,7 @@ main {
   }
 
   /*--Overlay text--*/
+  
   .services-overlay-text{
     top: 10px;
     left: 10px;
@@ -1050,7 +1064,7 @@ main {
   }
 
   /*--Overlay text--*/
-  .services-overlay-text{
+  /*.services-overlay-text{
     top: 25px;
     left: 25px;
     font-size: 28px;
@@ -1058,6 +1072,7 @@ main {
 }
 
 /* ----- latest-news styles ----- */
+
 #latest-news {
   order: 4;
 }
@@ -1155,6 +1170,7 @@ main {
 }
 
 /* ----- testimonials styles ----- */
+
 #testimonials {
   order: 4;
   display: flex;
@@ -1254,6 +1270,7 @@ main {
 }
 
 /* ----- partners styles ----- */
+
 #partners {
   order: 5;
   display: flex;
@@ -1312,6 +1329,7 @@ main {
 }
 
 /* ----- social-media styles ----- */
+
 #social-media {
   order: 6;
   padding: 0 35px;
@@ -1379,6 +1397,7 @@ main {
 }
 
 /* ----- about page styles ----- */
+
 
 .our-team {
   order: 2;
@@ -1472,6 +1491,7 @@ p.member-title {
 }
 
 /* ----- services page styles ----- */
+
 
 #intro,
 #flex-container {
@@ -1655,6 +1675,7 @@ p.member-title {
 
 /* ----- testimonials page styles ----- */
 
+
 .attribution {
   text-align: right;
   align-self: flex-end;
@@ -1703,6 +1724,7 @@ p.member-title {
 }
 
 /* ----- contact page styles ----- */
+
 
 .tagline {
   margin: 0  20px 35px;
@@ -1860,6 +1882,7 @@ p.member-title {
 
 /* ----- footer styles ----- */
 
+
 footer {
   font-size: 12px;
   height: auto;
@@ -1974,6 +1997,7 @@ footer li {
 }
 
 /*code for the news articls layout*/
+
 .news-article-container {
   display: flex;
   flex-direction: column;
@@ -2107,6 +2131,7 @@ footer li {
 
 
 /* media queries */
+
 @media (max-width: 600px) {
   .article-button {
     position: relative;
@@ -2213,6 +2238,7 @@ footer li {
 /*Whats on page*/
 
 /* medias for Whats on page */
+
 
 .event-carousel{
   object-fit: cover;
@@ -2459,6 +2485,7 @@ div > table > tbody > tr > td:hover{
 }
 
 /*-- Case Studies page --*/
+
 
 .case-main-info {
   padding: 0 20px;
