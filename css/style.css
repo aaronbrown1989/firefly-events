@@ -1906,6 +1906,7 @@ footer a:active{
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 8px;
 }
 
 .container-inner {
@@ -1980,6 +1981,10 @@ footer li {
   footer{
     padding: 15px 75px;
   }
+  .container-outer {
+    padding-left: 20px;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1992,12 +1997,15 @@ footer li {
   .container-outer {
     margin: 0 auto;
     max-width: 1300px;
+    padding-left: 70px;
+    padding-right: 15px;
   }
 
   .container-inner {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0;
   }
 
   .copyright-text {

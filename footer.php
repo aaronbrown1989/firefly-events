@@ -40,7 +40,7 @@
             |
           </li>
           <li>
-            <a href="#">
+            <a href="events.php">
               Our Events
             </a>
           </li>
