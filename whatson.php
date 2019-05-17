@@ -121,7 +121,7 @@
         <div class="convert_box">
           <div class="article">
             <div class="article-image">
-              <img src="img/news/news-company.png" alt="image for the article" class="article-image">
+              <img src="img/news/news-company.png" alt="People watching a festival" class="article-image">
             </div>
             <h2 class="articleheader">How's the Company Doing?</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
@@ -129,7 +129,7 @@
           </div>
           <div class="article">
             <div class="article-image">
-              <img src="img/news/news-review.png" alt="image for the article" class="article-image">
+              <img src="img/news/news-review.png" alt="solo guitar play" class="article-image">
             </div>
             <h2 class="articleheader">Latest Events Reviews</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
@@ -137,7 +137,7 @@
           </div>
           <div class="article">
             <div class="article-image">
-              <img src="img/news/news-details.png" alt="image for the article" class="article-image">
+              <img src="img/news/news-details.png" alt="fans at a festival" class="article-image">
             </div>
             <h2 class="articleheader">Details About Company</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>
@@ -145,7 +145,7 @@
           </div>
           <div class="article">
             <div class="article-image">
-              <img src="img/news/news-success.png" alt="image for the article" class="article-image">
+              <img src="img/news/news-success.png" alt="haveing fun at a festival" class="article-image">
             </div>
             <h2 class="articleheader">Events Success</h2>
             <p>Nulla commodo viverra felis sed ullamcorper. Nulla dapibus, tortor non congue tempus, tellus dolor lobortis dolor, sed mollis leo metus at nisl. In dolor ex, commodo at nisl quis, consequat tempus velit. Aenean consequat est quam, eget rhoncus ex varius quis.</p><br>

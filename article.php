@@ -8,7 +8,7 @@
       </div>
       <div class="feature-image-wrapper">
         <div class="article-feature-image">
-          <img src="img/news/news-company.png">
+          <img src="img/news/news-company.png" alt="People watching a festival.">
         </div>
       </div>
       <div class="box">
@@ -45,7 +45,7 @@
           Events
         </div>
         <div class="side-article-img">
-          <img src="img/news/news-details.png">
+          <img src="img/news/news-details.png" alt="fans at a festival">
         </div>
         <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
         <a href="#" class="button">Read More</a>
@@ -55,7 +55,7 @@
           News
         </div>
         <div class="side-article-img">
-          <img src="img/news/news-review.png">
+          <img src="img/news/news-review.png" alt="solo guitar play">
         </div>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus ex...</h4>
         <a href="#" class="button">Read More</a>
@@ -65,7 +65,7 @@
           News
         </div>
         <div class="side-article-img">
-          <img src="img/news/news-success.png">
+          <img src="img/news/news-success.png" alt="haveing fun at a festival">
         </div>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit phasellus...</h4>
         <a href="#" class="button">Read More</a>

@@ -9,7 +9,7 @@
     <div class="casestudies-container">
       <div class="case-studycontainer">
         <div class="article-image">
-          <img class="case-img" alt="Case Study 1" src="img\case-studies\case-1.png">
+          <img class="case-img" alt="Case Study 1" src="img\case-studies\case-1.png" alt="Stage using flame's">
         </div>
         <h2 class="articleheader">Case Study 1</h2>
         <p class="case-studytext">
@@ -19,7 +19,7 @@
       </div>
       <div class="case-studycontainer">
         <div class="article-image">
-          <img class="case-img" alt="Case Study 2" src="img\case-studies\case-2.png">
+          <img class="case-img" alt="Case Study 2" src="img\case-studies\case-2.png" alt="Croud surfing">
         </div>
         <h2 class="articleheader">Case Study 2</h2>
         <p class="case-studytext">
@@ -29,7 +29,7 @@
       </div>
       <div class="case-studycontainer">
         <div class="article-image">
-          <img class="case-img" alt="Case Study 3" src="img\case-studies\case-3.png">
+          <img class="case-img" alt="Case Study 3" src="img\case-studies\case-3.png" alt="filming the festival">
         </div>
         <h2 class="articleheader">Case Study 3</h2>
         <p class="case-studytext">
